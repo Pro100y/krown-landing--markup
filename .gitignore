@@ -1,0 +1,5 @@
+*.zip
+**/*.db
+incoming*
+bower_components/*
+node_modules/*

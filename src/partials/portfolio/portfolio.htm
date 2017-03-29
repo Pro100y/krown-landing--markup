@@ -1,0 +1,76 @@
+<section class="portfolio" id="portfolio">
+    <div class="portfolio__content-wrap">
+        <div class="portfolio__items-wrap">
+
+            <portfolio-item
+                link       = "#"
+                image      = "1"
+                title      = "Время"
+                subtitle   = "Часовой магазин и ломбард"
+                conversion = "Конверсия: 12%"
+            ></portfolio-item>
+
+            <portfolio-item
+                link       = "#"
+                image      = "2"
+                title      = "Шкафы"
+                subtitle   = "Изготовление и продажа шкафов-купе"
+                conversion = "Конверсия: 12%"
+            ></portfolio-item>
+
+            <portfolio-item
+                link       = "#"
+                image      = "3"
+                title      = "Stropuva"
+                subtitle   = "Продажа котлов Stropuva"
+                conversion = "Конверсия: 12%"
+            ></portfolio-item>
+
+        </div>
+
+
+        <transition
+            enter-active-class="animated fadeIn"
+            leave-active-class="animated fadeOut"
+        >
+            <div
+                class = "portfolio__items-wrap"
+                v-if  = "visibility"
+            >
+
+                <portfolio-item
+                    link       = "#"
+                    image      = "1"
+                    title      = "Время"
+                    subtitle   = "Часовой магазин и ломбард"
+                    conversion = "Конверсия: 12%"
+                ></portfolio-item>
+
+                <portfolio-item
+                    link       = "#"
+                    image      = "2"
+                    title      = "Шкафы"
+                    subtitle   = "Изготовление и продажа шкафов-купе"
+                    conversion = "Конверсия: 12%"
+                ></portfolio-item>
+
+                <portfolio-item
+                    link       = "#"
+                    image      = "3"
+                    title      = "Stropuva"
+                    subtitle   = "Продажа котлов Stropuva"
+                    conversion = "Конверсия: 12%"
+                ></portfolio-item>
+
+            </div>
+        </transition>
+
+        <button
+            class      = "portfolio__showmore"
+            type       = "button"
+            v-if       = "!visibility"
+            v-on:click = "visibility = !visibility"
+        >показать еще</button>
+
+    </div>
+</section>

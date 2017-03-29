@@ -1,0 +1,64 @@
+.cost {
+    margin-left: -var(--gridMainPadding);
+    padding: 58px var(--gridMainPadding) 66px;
+    width: calc(100% + var(--gridMainPadding)*2);
+    background-color: #fff3b7;
+}
+
+.cost__content-wrap {
+    margin: 0 auto 0 0;
+    max-width: 940px;
+    width: 100%;
+}
+
+.cost__title {
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: futura-pt;
+    line-height: 1.14;
+}
+
+.cost__subtitle {
+    color: #000000;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 70px;
+}
+
+.cost__items-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cost__item {
+    padding-top: 103px;
+    width: calc((100% - 20px*5)/6);
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.36;
+    &--1 {
+        background-image: url(../images/cost-1.png);
+    }
+    &--2 {
+        background-image: url(../images/cost-2.png);
+    }
+    &--3 {
+        background-image: url(../images/cost-3.png);
+    }
+    &--4 {
+        background-image: url(../images/cost-4.png);
+    }
+    &--5 {
+        background-image: url(../images/cost-5.png);
+    }
+    &--6 {
+        background-image: url(../images/cost-6.png);
+    }
+}

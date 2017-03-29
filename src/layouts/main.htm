@@ -1,0 +1,41 @@
+{% set layout = 'main' %}
+
+<!DOCTYPE html>
+
+<html lang="ru" data-layout="{{ layout }}" data-page="{{ page }}">
+
+    <head>
+
+        {% include "partials/head.htm" %}
+
+    </head>
+
+    <body>
+
+        <div class="grid" id="app">
+
+            <aside class="grid__sidebar" data-sticky>
+
+                {% block gridSidebar %}{% endblock %}
+
+            </aside>
+
+            <main class="grid__main">
+
+                {% block gridMain %}{% endblock %}
+
+            </main>
+
+            <footer class="grid__footer">
+
+                {% block gridFooter %}{% endblock %}
+
+            </footer>
+
+        </div>
+
+        {% include "partials/scripts.htm" %}
+
+    </body>
+
+</html>

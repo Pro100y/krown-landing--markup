@@ -1,0 +1,158 @@
+.site-header {
+    margin-left: -var(--gridMainPadding);
+    padding: 0 var(--gridMainPadding);
+    width: calc(100% + var(--gridMainPadding)*2);
+}
+
+.site-header__content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0 0;
+    min-height: 100vh;
+    max-width: 940px;
+    width: 100%;
+}
+
+.site-header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    width: 100%;
+}
+
+.site-header__logo {
+    width: 120px;
+    height: 29px;
+    background-image: url(../images/site-header-logo.png);
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.site-header__contacts {
+    margin-left: auto;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.site-header__phone {
+    color: #24212f;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: futura-pt;
+}
+
+.site-header__mail {
+    font-weight: 700;
+    color: #0078ff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid currentColor;
+    font-family: futura-pt;
+    &:hover {
+        color: #2a8aea;
+        border-color: transparent;
+    }
+}
+
+.site-header__phone-sup {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.site-header__middle {
+    align-self: center;
+    width: 100%;
+}
+
+.site-header__heading {
+    margin-bottom: 67px;
+    width: 100%;
+}
+
+.site-header__title {
+    margin-bottom: 6px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 64px;
+    font-family: futura-pt;
+}
+
+.site-header__subtitle {
+    color: #000000;
+    font-size: 36px;
+    font-family: futura-pt;
+}
+
+.site-header__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 89px;
+    width: 100%;
+}
+
+.site-header__readmore {
+    margin-right: 20px;
+    padding: 21px 60px;
+    border-radius: 71px;
+    background-color: #2a8aea;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: futura-pt;
+    &:hover {
+        background-color: rgba(42, 138, 234, 0.8);
+    }
+}
+
+.site-header__show-cases {
+    padding: 21px 0;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-family: futura-pt;
+    font-weight: 600;
+    &:hover {
+        color: #2a8aea;
+    }
+}
+
+.site-header__items-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 37px;
+    width: 100%;
+}
+
+.site-header__item {
+    padding-top: 89px;
+    width: calc((100% - 20px*3)/4);
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: #24212f;
+    font-size: 22px;
+    font-family: futura-pt;
+    &--1 {
+        background-image: url(../images/site-header-1.png);
+    }
+    &--2 {
+        background-image: url(../images/site-header-2.png);
+    }
+    &--3 {
+        background-image: url(../images/site-header-3.png);
+    }
+    &--4 {
+        background-image: url(../images/site-header-4.png);
+    }
+}

@@ -1,0 +1,91 @@
+<section class="cost-2">
+    <div class="cost-2__content-wrap">
+
+        <header class="cost-2__title">Наши тарифы</header>
+
+        <div class="cost-2__items-wrap">
+
+            <figure class="cost-2__item">
+                <p class="cost-2__item-title">Базовый</p>
+                <p class="cost-2__item-subtitle">Когда нужен качественный лендинг в срок и за адекватные деньги</p>
+                <p class="cost-2__item-summary">48 000 руб.</p>
+
+                <button
+                    class  = "cost-2__item-order"
+                    @click = "showLightbox = true"
+                >заказать</button>
+
+                <ul class="cost-2__item-list">
+                    <li class="cost-2__item-list-elem">интервью с клиентом и формирование бизнес задач</li>
+                    <li class="cost-2__item-list-elem">прототипирование</li>
+                    <li class="cost-2__item-list-elem">подготовка контента/копирайтинг</li>
+                    <li class="cost-2__item-list-elem">адаптивный дизайн</li>
+                    <li class="cost-2__item-list-elem">верстка</li>
+                    <li class="cost-2__item-list-elem">настройка уведомлений на почту</li>
+                </ul>
+            </figure>
+
+            <figure class="cost-2__item cost-2__item--optimal">
+                <p class="cost-2__item-title">Старт продаж</p>
+                <p class="cost-2__item-subtitle">Когда надо получить звонки/заявки в компанию, и не беспокоиться о результате.</p>
+                <p class="cost-2__item-summary">97 000 руб.</p>
+                <button
+                    class  = "cost-2__item-order"
+                    @click = "showLightbox = true"
+                >заказать</button>
+                <ul class="cost-2__item-list">
+                    <li class="cost-2__item-list-elem">интервью с клиентом и формирование бизнес задач</li>
+                    <li class="cost-2__item-list-elem">прототипирование</li>
+                    <li class="cost-2__item-list-elem">подготовка контента/копирайтинг</li>
+                    <li class="cost-2__item-list-elem">адаптивный дизайн</li>
+                    <li class="cost-2__item-list-elem">верстка</li>
+                    <li class="cost-2__item-list-elem">настройка уведомлений на почту</li>
+                    <li class="cost-2__item-list-elem">подготовка РК: Я.Директ, Google AdWords</li>
+                    <li class="cost-2__item-list-elem">настройка ретаргетинга</li>
+                    <li class="cost-2__item-list-elem">настройка целей и отслеживание конверсии</li>
+                    <li class="cost-2__item-list-elem">+1 месяц контроля работы рекламных кампаний</li>
+                </ul>
+            </figure>
+
+            <figure class="cost-2__item">
+                <p class="cost-2__item-title">Старт продаж + аналитика</p>
+                <p class="cost-2__item-subtitle">Получить лучший результат в отрасли по объему звонков/заявок, и самую низкую стоимость привлечения?</p>
+                <p class="cost-2__item-summary">от 180 000 руб.</p>
+                <button
+                    class  = "cost-2__item-order"
+                    @click = "showLightbox = true"
+                >заказать</button>
+                <ul class="cost-2__item-list">
+                    <li class="cost-2__item-list-elem">интервью с клиентом и формирование бизнес задач</li>
+                    <li class="cost-2__item-list-elem">прототипирование</li>
+                    <li class="cost-2__item-list-elem">подготовка контента/копирайтинг</li>
+                    <li class="cost-2__item-list-elem">адаптивный дизайн</li>
+                    <li class="cost-2__item-list-elem">верстка</li>
+                    <li class="cost-2__item-list-elem">настройка уведомлений на почту</li>
+                    <li class="cost-2__item-list-elem">подготовка РК: Я.Директ, Google AdWords</li>
+                    <li class="cost-2__item-list-elem">настройка ретаргетинга</li>
+                    <li class="cost-2__item-list-elem">настройка целей и отслеживание конверсии</li>
+                    <li class="cost-2__item-list-elem">+1.5 месяц контроля работы рекламных кампаний</li>
+                    <li class="cost-2__item-list-elem">настройка целей Я.Метрика/G.Analytics</li>
+                    <li class="cost-2__item-list-elem">отслеживание конверсии и стоимости привлечения</li>
+                    <li class="cost-2__item-list-elem">настройка динамического Call-trackinga</li>
+                    <li class="cost-2__item-list-elem">интеграция с вашей CRM или внедрение AmoCRM</li>
+                    <li class="cost-2__item-list-elem">проведение A/B тестирование</li>
+                    <li class="cost-2__item-list-elem">анализ поведенческих факторов</li>
+                </ul>
+            </figure>
+
+        </div>
+
+    </div>
+
+    <lightbox
+        v-show = "showLightbox"
+        @close = "showLightbox = false"
+    >
+
+        <form-order slot="lightbox__container"></form-order>
+
+    </lightbox>
+
+</section>

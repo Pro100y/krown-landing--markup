@@ -1,0 +1,44 @@
+.cycle {
+    margin-bottom: 108px;
+    width: 100%;
+}
+
+.cycle__content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0 0;
+    max-width: 940px;
+    width: 100%;
+}
+
+.cycle__header {
+    padding-right: 1rem;
+    width: 320px;
+}
+
+.cycle__title {
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 36px;
+    font-family: futura-pt;
+    line-height: 1.28;
+}
+
+.cycle__subtitle {
+    color: #828282;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: futura-pt;
+    line-height: 1.33;
+}
+
+.cycle__image-wrap {
+    width: calc(100% - 320px);
+}
+
+.cycle__image {
+    display: block;
+    margin-left: auto;
+    max-width: 100%;
+}

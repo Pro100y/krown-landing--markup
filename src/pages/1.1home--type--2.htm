@@ -1,0 +1,190 @@
+{% extends "layouts/main.htm" %}
+
+{% set page  = "home" %}
+{% set title = "Главная" %}
+
+{# == #}
+
+{% block gridSidebar %}
+
+    <sidebar></sidebar>
+
+{% endblock %}
+
+{% block gridMain %}
+
+    <site-header></site-header>
+
+    <tasks></tasks>
+
+    <process></process>
+
+    <cycle></cycle>
+
+    <portfolio-2>
+
+        <template slot="portfolio-2__items-wrap--visible">
+
+            <portfolio-2-item
+                image         = "portfolio-2-1.jpg"
+                title         = 'Часовой ломбард “Время”'
+                text          = "Привлечение клиентов на сдачу часов премиум сегмента в часовой ломбард."
+                readmore-link = "#"
+            >
+
+                <portfolio-2-item-cost
+                    summary     = "600-800"
+                    description = "лидов ежемесячно"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "250 руб."
+                    description = "средняя стоимость лида"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "800+"
+                    description = "продаж с 2014 года"
+                ></portfolio-2-item-cost>
+
+            </portfolio-2-item>
+
+            <portfolio-2-item
+                image         = "portfolio-2-2.jpg"
+                title         = 'Шкафы-купе'
+                text          = "Изготовление и продажа шкафов-купе"
+                readmore-link = "#"
+            >
+
+                <portfolio-2-item-cost
+                    summary     = "600-800"
+                    description = "лидов ежемесячно"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "250 руб."
+                    description = "средняя стоимость лида"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "800+"
+                    description = "продаж с 2014 года"
+                ></portfolio-2-item-cost>
+
+            </portfolio-2-item>
+
+            <portfolio-2-item
+                image         = "portfolio-2-3.jpg"
+                title         = 'Stropuva'
+                text          = "Привлечение клиентов на приобретение котлов длительного горения Stropuva"
+                readmore-link = "#"
+            >
+
+                <portfolio-2-item-cost
+                    summary     = "600-800"
+                    description = "лидов ежемесячно"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "250 руб."
+                    description = "средняя стоимость лида"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "800+"
+                    description = "продаж с 2014 года"
+                ></portfolio-2-item-cost>
+
+            </portfolio-2-item>
+
+        </template>
+
+        <template slot="portfolio-2__items-wrap--hidden">
+
+            <portfolio-2-item
+                image         = "portfolio-2-1.jpg"
+                title         = 'Часовой ломбард “Время”'
+                text          = "Привлечение клиентов на сдачу часов премиум сегмента в часовой ломбард."
+                readmore-link = "#"
+            >
+
+                <portfolio-2-item-cost
+                    summary     = "600-800"
+                    description = "лидов ежемесячно"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "250 руб."
+                    description = "средняя стоимость лида"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "800+"
+                    description = "продаж с 2014 года"
+                ></portfolio-2-item-cost>
+
+            </portfolio-2-item>
+
+            <portfolio-2-item
+                image         = "portfolio-2-2.jpg"
+                title         = 'Шкафы-купе'
+                text          = "Изготовление и продажа шкафов-купе"
+                readmore-link = "#"
+            >
+
+                <portfolio-2-item-cost
+                    summary     = "600-800"
+                    description = "лидов ежемесячно"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "250 руб."
+                    description = "средняя стоимость лида"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "800+"
+                    description = "продаж с 2014 года"
+                ></portfolio-2-item-cost>
+
+            </portfolio-2-item>
+
+            <portfolio-2-item
+                image         = "portfolio-2-3.jpg"
+                title         = 'Stropuva'
+                text          = "Привлечение клиентов на приобретение котлов длительного горения Stropuva"
+                readmore-link = "#"
+            >
+
+                <portfolio-2-item-cost
+                    summary     = "600-800"
+                    description = "лидов ежемесячно"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "250 руб."
+                    description = "средняя стоимость лида"
+                ></portfolio-2-item-cost>
+
+                <portfolio-2-item-cost
+                    summary     = "800+"
+                    description = "продаж с 2014 года"
+                ></portfolio-2-item-cost>
+
+            </portfolio-2-item>
+
+        </template>
+
+    </portfolio-2>
+
+    <specials></specials>
+
+    <cost-2></cost-2>
+
+{% endblock %}
+
+{% block gridFooter %}
+
+    <site-footer></site-footer>
+
+{% endblock %}

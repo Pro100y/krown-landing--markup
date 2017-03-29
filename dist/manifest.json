@@ -1,0 +1,12 @@
+{
+    "background_color": "#165684",
+    "name": "Береговой",
+    "short_name": "Пансионат Береговой",
+    "display": "standalone",
+    "icons": [{
+        "src": "/assets/icons/apple-touch-icon-144x144--site-1.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    }],
+    "orientation": "portrait"
+}
