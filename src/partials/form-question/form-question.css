@@ -1,0 +1,105 @@
+.form-question {
+    width: 100%;
+}
+
+.form-question__title {
+    @nest [data-form-success] & {
+        display: none;
+    }
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    &--success {
+        @nest [data-form-success] & {
+            display: block;
+        }
+        display: none;
+        padding-top: 108px;
+        background-image: url(../images/site-footer-2.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+}
+
+.form-question__subtitle {
+    @nest [data-form-success] & {
+        display: none;
+    }
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: proxima-nova;
+    line-height: 1.33;
+    &--success {
+        @nest [data-form-success] & {
+            display: block;
+        }
+        display: none;
+    }
+}
+
+.form-question__input-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.form-question__input {
+    @nest [data-form-success] & {
+        display: none;
+    }
+    margin: 0 auto 20px;
+    padding: 0 30px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 75px;
+    background-color: #3b384a;
+    color: #ffffff;
+    text-align: left;
+    font-size: 30px;
+    font-family: futura-pt;
+    &:focus {
+        background-color: #494559;
+    }
+    &[data-form-field-invalid] {
+        border-color: #D36135;
+    }
+}
+
+.form-question__button {
+    width: 100px;
+    height: 74px;
+    border-radius: 100px;
+    background-color: #0068fc;
+    background-image: url(../images/form-question-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    right: 13px;
+    top: 13px;
+    &:hover {
+        background-color: rgba(42, 138, 234, 0.8);
+    }
+}
+
+.form-question__status {
+    display: none;
+    font-family: proxima-nova;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    color: #838383;
+    padding-bottom: 20px;
+}
+
+.form-question__description {
+    font-family: proxima-nova;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    color: #838383;
+}

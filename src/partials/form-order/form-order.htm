@@ -1,4 +1,9 @@
-<form class="form-order" data-form>
+<form
+    class  = "form-order"
+    action = "/assets/forms/send-form.php"
+    :title = "'Заказать лендинг с адреса: ' + location"
+    data-form
+>
 
     <header class="form-order__title">Заказать лендинг</header>
     <p class="form-order__subtitle">Оставьте Ваш номер телефона и мы перезвоним:</p>
@@ -10,6 +15,7 @@
             <input
                 type="text"
                 class="form-order__input"
+                name="ff1"
                 placeholder="Введите ваше имя"
             >
             <label for="" class="form-order__label">Номер телефона*:</label>
@@ -17,19 +23,20 @@
                 type="text"
                 class="form-order__input"
                 placeholder="+7 (495) 000-00-00"
+                name="ff2"
                 data-form-phone-field
                 required
             >
-            <p class="form-order__status" data-form-status>asfasfsadf</p>
+            <p class="form-order__status" data-form-status></p>
         </div>
 
         <figcaption class="form-order__caption">
             <p class="form-order__caption-title">тариф:</p>
-            <p class="form-order__plan">Старт продаж + аналитика</p>
-            <p class="form-order__plan-description">Получить лучший результат в отрасли по объему звонков/заявок, и самую низкую стоимость привлечения?</p>
+            <p class="form-order__plan">[[ plan ]]</p>
+            <p class="form-order__plan-description">[[ planDescription ]]</p>
             <p class="form-order__cost">
                 от
-                <br>180 000 руб.
+                <br>[[ cost ]] руб.
             </p>
         </figcaption>
 

@@ -1,16 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
 
-    //плавающий
-    // gridSidebar = function () {
-    //     $('.grid__sidebar[data-sticky]').theiaStickySidebar({
-    //         additionalMarginTop: 0,
-    //         // minWidth: 1200
-    //     });
-    // };
-    // gridSidebar();
-
-});
-document.addEventListener('DOMContentLoaded', function () {
+jQuery(document).ready(function ($) {
 
     //images padding
     $('.typography img').each(function () {
@@ -147,138 +136,144 @@ document.addEventListener('DOMContentLoaded', function () {
         return false;
     });
 });
-Vue.component('cost', {
+Vue.component('advantages-tab', {
     delimiters: ['[[', ']]'],
-    template: require('./cost/cost.htm')
+    template: require('./advantages/advantages__tab.htm'),
+    props: ['promoTitle', 'promoText', 'content']
 });
-Vue.component('cost-2', {
+
+Vue.component('advantages', {
     delimiters: ['[[', ']]'],
-    template: require('./cost-2/cost-2.htm'),
+    template: require('./advantages/advantages.htm'),
+    mounted: function mounted() {
+        $('.advantages').tabtab({
+            tabMenu: '.advantages__nav', // direct container of the tab menu items
+            tabContent: '.advantages__tabs-wrap', // direct container of the tab content items
+
+            startSlide: 1, // starting slide on pageload
+            arrows: true, // keyboard arrow navigation
+            dynamicHeight: true, // if true the height will dynamic and animated.
+            useAnimations: true, // disables animations.
+
+            easing: 'ease', // http://julian.com/research/velocity/#easing
+            speed: 1000, // animation speed
+            slideDelay: 0, // delay the animation
+            perspective: 1200, // set 3D perspective
+            transformOrigin: 'center top', // set the center point of the 3d animation
+            perspectiveOrigin: '50% 50%', // camera angle
+
+            translateY: 0, // animate along the Y axis (val: px or ‘slide’)
+            translateX: 30, // animate along the X axis (val: px or ‘slide’)
+            scale: 1, // animate scale (val: 0-2)
+            rotateX: 0, // animate rotation (val: 0deg-360deg)
+            rotateY: 0, // animate Y acces rotation (val: 0deg-360deg)
+            skewY: 0, // animate Y skew (val: 0deg-360deg)
+            skewX: 0 });
+    }
+});
+Vue.component('experience', {
+    delimiters: ['[[', ']]'],
+    template: require('./experience/experience.htm')
+});
+Vue.component('faq', {
+    delimiters: ['[[', ']]'],
+    template: require('./faq/faq.htm'),
     data: function data() {
         return {
-            showLightbox: false
+            faq: {
+                items: [{
+                    title: 'Когда сможете приступить?',
+                    text: 'На следующий рабочий день после получения предоплаты.'
+                }, {
+                    title: 'Как будет происходить коммуникация?',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat delectus reprehenderit maiores, ex ipsam magni saepe minus voluptatibus rerum, quo magnam est, expedita ut sint sed vero sit doloribus.'
+                }, {
+                    title: 'Как можно оплатить?',
+                    text: 'Similique illo accusamus, quae nulla consectetur, obcaecati labore aspernatur eveniet, tempora in enim voluptatibus dolor sunt a nobis. Saepe beatae harum doloremque velit, dignissimos asperiores iste provident. Molestiae, iusto ducimus.'
+                }, {
+                    title: 'В каком виде я получу результат?',
+                    text: 'Optio accusantium eos doloremque, fugiat adipisci molestiae voluptates expedita omnis modi amet odit architecto accusamus. Explicabo distinctio eum deserunt accusantium totam? Ut, dolorem iure recusandae quae suscipit corporis ea repellendus.'
+                }]
+            }
         };
     },
     mounted: function mounted() {
-        /**
-         * Выравнивание высот
-         *
-         * @param {string} node Элемент у которого нужно выровнять высоту
-         */
-        function normalizeHeight(node) {
-
-            var maxColHeight = 0;
-
-            $(node).height('auto');
-
-            $(node).each(function () {
-                if ($(this).height() > maxColHeight) {
-                    maxColHeight = $(this).height();
-                }
-            });
-
-            $(node).height(maxColHeight);
-        }
-
-        normalizeHeight('.cost-2__item-subtitle');
-        $(window).resize(function () {
-            normalizeHeight('.cost-2__item-subtitle');
+        // аккордеон
+        $('.faq [data-accordion]:first').addClass('open');
+        $('.faq [data-accordion]').accordion({
+            transitionSpeed: 1000
         });
     }
 });
-Vue.component('cycle', {
-    delimiters: ['[[', ']]'],
-    template: require('./cycle/cycle.htm')
-});
 Vue.component('form-order', {
     delimiters: ['[[', ']]'],
-    template: require('./form-order/form-order.htm')
+    template: require('./form-order/form-order.htm'),
+    props: ['plan', 'planDescription', 'cost'],
+    computed: {
+        location: function (_location) {
+            function location() {
+                return _location.apply(this, arguments);
+            }
+
+            location.toString = function () {
+                return _location.toString();
+            };
+
+            return location;
+        }(function () {
+            return location.href;
+        })
+    }
+});
+Vue.component('form-question', {
+    delimiters: ['[[', ']]'],
+    template: require('./form-question/form-question.htm'),
+    computed: {
+        location: function (_location2) {
+            function location() {
+                return _location2.apply(this, arguments);
+            }
+
+            location.toString = function () {
+                return _location2.toString();
+            };
+
+            return location;
+        }(function () {
+            return location.href;
+        })
+    }
 });
 Vue.component('lightbox', {
     delimiters: ['[[', ']]'],
     template: require('./lightbox/lightbox.htm')
 });
-Vue.component('portfolio-item', {
+Vue.component('promo', {
     delimiters: ['[[', ']]'],
-    template: require('./portfolio/portfolio__item.htm'),
-    props: ['link', 'image', 'title', 'subtitle', 'conversion']
+    template: require('./promo/promo.htm')
 });
-
-Vue.component('portfolio', {
+Vue.component('quality', {
     delimiters: ['[[', ']]'],
-    template: require('./portfolio/portfolio.htm'),
-    data: function data() {
-        return {
-            visibility: false
-        };
-    }
-});
-Vue.component('portfolio-2-item-cost', {
-    delimiters: ['[[', ']]'],
-    template: require('./portfolio-2/portfolio-2__item-cost.htm'),
-    props: ['summary', 'description']
-});
-
-Vue.component('portfolio-2-item', {
-    delimiters: ['[[', ']]'],
-    template: require('./portfolio-2/portfolio-2__item.htm'),
-    props: ['image', 'title', 'text', 'readmoreLink']
-});
-
-Vue.component('portfolio-2', {
-    delimiters: ['[[', ']]'],
-    template: require('./portfolio-2/portfolio-2.htm'),
-    data: function data() {
-        return {
-            visibility: false
-        };
-    },
-
-    methods: {
-        test: function test() {
-            console.log('sadf');
-        }
-    }
-});
-Vue.component('process-item', {
-    delimiters: ['[[', ']]'],
-    template: require('./process/process__item.htm'),
-    props: ['image', 'title', 'text']
-});
-Vue.component('process', {
-    delimiters: ['[[', ']]'],
-    template: require('./process/process.htm')
-});
-Vue.component('sidebar', {
-    delimiters: ['[[', ']]'],
-    template: require('./sidebar/sidebar.htm'),
-    data: function data() {
-        return {
-            year: 2017
-        };
-    }
+    template: require('./quality/quality.htm')
 });
 Vue.component('site-footer', {
     delimiters: ['[[', ']]'],
-    template: require('./site-footer/site-footer.htm')
-});
-Vue.component('site-header', {
-    delimiters: ['[[', ']]'],
-    template: require('./site-header/site-header.htm'),
-    mounted: function mounted() {
-        $('.site-header').parallax({
-            imageSrc: $('.site-header').attr('data-image'),
-            bleed: 20
-        });
+    template: require('./site-footer/site-footer.htm'),
+    computed: {
+        location: function (_location3) {
+            function location() {
+                return _location3.apply(this, arguments);
+            }
+
+            location.toString = function () {
+                return _location3.toString();
+            };
+
+            return location;
+        }(function () {
+            return location.href;
+        })
     }
-});
-Vue.component('specials', {
-    delimiters: ['[[', ']]'],
-    template: require('./specials/specials.htm')
-});
-Vue.component('tasks', {
-    delimiters: ['[[', ']]'],
-    template: require('./tasks/tasks.htm')
 });
 var App = new Vue({
     delimiters: ['[[', ']]'],
@@ -286,7 +281,7 @@ var App = new Vue({
     name: 'App',
     data: {
         animateAnchors: true,
-        animationsOnScholl: false,
+        animationsOnScholl: true,
         customFileInput: false,
         customSelect: false,
         detectBrowser: true,
@@ -301,10 +296,10 @@ var App = new Vue({
     methods: {
         pixlayout: function pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-about.png",
-                show: false,
+                src: "/assets/images/theme-main--960.png",
+                show: true,
                 top: 0,
-                left: -135,
+                left: 282,
                 opacity: 0.2
             });
         },

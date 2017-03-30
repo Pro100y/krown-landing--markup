@@ -4,7 +4,7 @@ const App = new Vue({
     name: 'App',
     data: {
         animateAnchors: true,
-        animationsOnScholl: false,
+        animationsOnScholl: true,
         customFileInput: false,
         customSelect: false,
         detectBrowser: true,
@@ -19,10 +19,10 @@ const App = new Vue({
     methods: {
         pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-about.png",
-                show: false,
+                src: "/assets/images/theme-main--960.png",
+                show: true,
                 top: 0,
-                left: -135,
+                left: 282,
                 opacity: 0.2
             });
         },

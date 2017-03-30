@@ -14,23 +14,9 @@
 
         <div class="grid" id="app">
 
-            <aside class="grid__sidebar" data-sticky>
+            {% block grid %}{% endblock %}
 
-                {% block gridSidebar %}{% endblock %}
-
-            </aside>
-
-            <main class="grid__main">
-
-                {% block gridMain %}{% endblock %}
-
-            </main>
-
-            <footer class="grid__footer">
-
-                {% block gridFooter %}{% endblock %}
-
-            </footer>
+            <site-footer></site-footer>
 
         </div>
 

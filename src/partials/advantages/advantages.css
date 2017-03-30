@@ -1,0 +1,124 @@
+.advantages {
+    width: 100%;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.advantages__content-wrap {
+    padding: 100px 0;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.advantages__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+    list-style: none;
+}
+
+.advantages__nav-item {
+    width: calc((100% - 100px)/6);
+    height: 128px;
+    border-radius: 7px;
+    background-color: #f7f8fa;
+    text-align: center;
+    padding: 86px 10px 10px;
+    background-position: center 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition-duration: var(--transitionDuration);
+    &--1 {
+        background-image: url(../images/advantages-1.svg);
+        &:hover,
+        &.active {
+            background-image: url(../images/advantages-1a.svg);
+        }
+    }
+    &--2 {
+        background-image: url(../images/advantages-2.svg);
+        &:hover,
+        &.active {
+            background-image: url(../images/advantages-2a.svg);
+        }
+    }
+    &--3 {
+        background-image: url(../images/advantages-3.svg);
+        &:hover,
+        &.active {
+            background-image: url(../images/advantages-3a.svg);
+        }
+    }
+    &--4 {
+        background-image: url(../images/advantages-4.svg);
+        &:hover,
+        &.active {
+            background-image: url(../images/advantages-4a.svg);
+        }
+    }
+    &--5 {
+        background-image: url(../images/advantages-5.svg);
+        &:hover,
+        &.active {
+            background-image: url(../images/advantages-5a.svg);
+        }
+    }
+    &--6 {
+        background-image: url(../images/advantages-6.svg);
+        &:hover,
+        &.active {
+            background-image: url(../images/advantages-6a.svg);
+        }
+    }
+    &:hover,
+    &.active {
+        background-color: #0068fc;
+        color: #fff;
+    }
+}
+
+.advantages__tabs-wrap {
+    width: 100%;
+}
+
+.advantages__tab {
+    width: 100%;
+}
+
+.advantages__tab-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantages__tab-promo {
+    background-image: url(../images/advantages-7.svg);
+    width: 380px;
+}
+
+.advantages__tab-promo-title {}
+
+.advantages__tab-promo-text {}
+
+.advantages__tab-content {
+    width: calc(100% - 380px - 100px);
+    & h2 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.33;
+        margin-bottom: 10px;
+    }
+    & p {
+        font-family: proxima-nova;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.36;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}

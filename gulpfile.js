@@ -129,7 +129,7 @@ const project = {
             //'bower_components/list.js/dist/list.min.js',
             'bower_components/tabtab.js/dist/tabtab.min.js',
             'bower_components/tipso/src/tipso.min.js',
-            //'bower_components/wow/dist/wow.min.js',
+            'bower_components/wow/dist/wow.min.js',
             //'bower_components/legitripple/dist/ripple.min.js',
             //'bower_components/superplaceholder/dist/superplaceholder.min.js',
             // 'bower_components/isotope/dist/isotope.pkgd.min.js',
@@ -143,8 +143,7 @@ const project = {
             // 'bower_components/maphilight/jquery.maphilight.js',
 
             // Плагины для разработки
-            'src/assets/dev/jquery.pixlayout.0.9.7.js',
-            // 'src/assets/dev/jquery.pixlayout.config.js',
+            'src/assets/dev/jquery.pixlayout.0.9.7.js'
 
         ];
         return vendorJS;
