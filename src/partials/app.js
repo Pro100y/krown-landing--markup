@@ -49,9 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
     |
     */
 
-    // кастомизация селекта
-    $('[data-form] select').selectric();
-
     // устанока маски на поля
     $('[data-form-phone-field]').mask("+7 (999) 999-99-99");
     $('[data-form-time-field]').mask("99:99");
@@ -136,6 +133,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return false;
     });
 });
+Vue.component('about-us', {
+    delimiters: ['[[', ']]'],
+    template: require('./about-us/about-us.htm')
+});
 Vue.component('advantages-tab', {
     delimiters: ['[[', ']]'],
     template: require('./advantages/advantages__tab.htm'),
@@ -152,7 +153,8 @@ Vue.component('advantages', {
 
             startSlide: 1, // starting slide on pageload
             arrows: true, // keyboard arrow navigation
-            dynamicHeight: true, // if true the height will dynamic and animated.
+            // dynamicHeight: false, // if true the height will dynamic and animated.
+            fixedHeight: false, // if true the height will dynamic and animated.
             useAnimations: true, // disables animations.
 
             easing: 'ease', // http://julian.com/research/velocity/#easing
@@ -169,7 +171,20 @@ Vue.component('advantages', {
             rotateY: 0, // animate Y acces rotation (val: 0deg-360deg)
             skewY: 0, // animate Y skew (val: 0deg-360deg)
             skewX: 0 });
+
+        //фикс начальной высоты табов
+        var heightFix = function heightFix() {
+            $(".advantages .js-tabs-height").height($(".advantages__tab.active").outerHeight() + 42);
+        };
+        heightFix();
+        $(window).resize(function () {
+            heightFix();
+        });
     }
+});
+Vue.component('contacts', {
+    delimiters: ['[[', ']]'],
+    template: require('./contacts/contacts.htm')
 });
 Vue.component('experience', {
     delimiters: ['[[', ']]'],
@@ -244,17 +259,158 @@ Vue.component('form-question', {
         })
     }
 });
+Vue.component('keys', {
+    delimiters: ['[[', ']]'],
+    template: require('./keys/keys.htm')
+});
 Vue.component('lightbox', {
     delimiters: ['[[', ']]'],
     template: require('./lightbox/lightbox.htm')
+});
+Vue.component('linking', {
+    delimiters: ['[[', ']]'],
+    template: require('./linking/linking.htm'),
+    data: function data() {
+        return {
+            showModal: false
+        };
+    },
+
+    computed: {
+        year: function year() {
+            var currentYear = new Date();
+            return currentYear.getFullYear();
+        }
+    },
+    methods: {
+        changeScroll: function changeScroll() {
+            if (this.showModal === true) {
+                $('html').attr('data-lock-scroll', '').css({
+                    'paddingRight': '15px'
+                });
+            } else {
+                setTimeout(function () {
+                    $('html').removeAttr('data-lock-scroll').css({
+                        'paddingRight': '0px'
+                    });
+                }, 500);
+            }
+        }
+    }
+});
+Vue.component('map-widget', {
+    delimiters: ['[[', ']]'],
+    template: require('./map-widget/map-widget.htm'),
+    props: ['address'],
+    mounted: function mounted() {
+
+        var query = this.address;
+
+        // Yandex Map
+        document.addEventListener('DOMContentLoaded', function () {
+
+            ymaps.ready().done(function (ym) {
+                var map = new ym.Map('map-widget', {
+                    center: [44.58330422853194, 33.47989102536938],
+                    zoom: 17,
+                    controls: []
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+
+                var placemark = new ymaps.Placemark([44.58330422853194, 33.48230501348279], {
+                    hintContent: 'г. Севастополь, Фиолентовское шоссе, д.1',
+                    balloonContent: 'KROWN'
+                });
+
+                map.geoObjects.add(placemark);
+
+                map.behaviors.disable('scrollZoom');
+            });
+        });
+    }
+});
+Vue.component('navigation', {
+    delimiters: ['[[', ']]'],
+    template: require('./navigation/navigation.htm')
+});
+Vue.component('projects-gallery-item', {
+    delimiters: ['[[', ']]'],
+    template: require('./projects/projects__gallery-item.htm'),
+    props: ['link', 'image', 'suptitle', 'title'],
+    mounted: function mounted() {
+        $.adaptiveBackground.run({
+            selector: '[data-adaptive-background]',
+            parent: null,
+            exclude: ['rgb(0,0,0)', 'rgba(255,255,255)'],
+            normalizeTextColor: true,
+            normalizedTextColors: {
+                light: "#fff",
+                dark: "#333"
+            },
+            lumaClasses: {
+                light: "ab-light",
+                dark: "ab-dark"
+            }
+        });
+    }
+});
+
+Vue.component('projects', {
+    delimiters: ['[[', ']]'],
+    template: require('./projects/projects.htm'),
+    mounted: function mounted() {
+
+        var $grid = $('.projects__gallery-items-wrap').isotope({
+            itemSelector: '.projects__gallery-item'
+        });
+        $('.projects__gallery-nav').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
+
+        $('.projects__gallery-nav-item').click(function () {
+            $('.projects__gallery-nav-item--active').removeClass('projects__gallery-nav-item--active');
+            $(this).addClass('projects__gallery-nav-item--active');
+        });
+    }
 });
 Vue.component('promo', {
     delimiters: ['[[', ']]'],
     template: require('./promo/promo.htm')
 });
+Vue.component('quality-item', {
+    delimiters: ['[[', ']]'],
+    template: require('./quality/quality__item.htm'),
+    props: ['link', 'image', 'suptitle', 'title'],
+    mounted: function mounted() {
+        $.adaptiveBackground.run({
+            selector: '[data-adaptive-background]',
+            parent: null,
+            exclude: ['rgb(0,0,0)', 'rgba(255,255,255)'],
+            normalizeTextColor: true,
+            normalizedTextColors: {
+                light: "#fff",
+                dark: "#333"
+            },
+            lumaClasses: {
+                light: "ab-light",
+                dark: "ab-dark"
+            }
+        });
+    }
+});
+
 Vue.component('quality', {
     delimiters: ['[[', ']]'],
-    template: require('./quality/quality.htm')
+    template: require('./quality/quality.htm'),
+    data: function data() {
+        return {
+            readmore: false
+        };
+    }
 });
 Vue.component('site-footer', {
     delimiters: ['[[', ']]'],
@@ -275,6 +431,10 @@ Vue.component('site-footer', {
         })
     }
 });
+Vue.component('special', {
+    delimiters: ['[[', ']]'],
+    template: require('./special/special.htm')
+});
 var App = new Vue({
     delimiters: ['[[', ']]'],
     el: '#app',
@@ -286,7 +446,7 @@ var App = new Vue({
         customSelect: false,
         detectBrowser: true,
         disableUserSelect: false,
-        galleryLightbox: true,
+        galleryLightbox: false,
         infiniteAjaxScroll: false,
         pagePreloader: false,
         pixelPerfect: true,
@@ -296,8 +456,8 @@ var App = new Vue({
     methods: {
         pixlayout: function pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-main--960.png",
-                show: true,
+                src: "/assets/images/theme-contacts--960.png",
+                show: false,
                 top: 0,
                 left: 282,
                 opacity: 0.2
@@ -319,7 +479,7 @@ var App = new Vue({
         }),
         mPageScroll2id: function mPageScroll2id() {
             $("a[href*='#'], button[href*='#']").mPageScroll2id({
-                offset: 40,
+                offset: 0,
                 scrollSpeed: 1000,
                 scrollEasing: 'easeInOutCubic'
             });

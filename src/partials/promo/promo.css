@@ -1,6 +1,6 @@
 .promo {
     overflow: hidden;
-    padding: 0 10px 125px;
+    padding: 0 10px 130px;
     width: 100%;
     background-color: #f6fbff;
 }
@@ -9,39 +9,7 @@
     margin: 0 auto;
     max-width: 940px;
     width: 100%;
-}
-
-.promo__header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 107px;
-    padding-top: 50px;
-    width: 100%;
-}
-
-.promo__logo {
-    width: 220px;
-    height: 31px;
-    background-image: url(../images/promo-1.png);
-    background-position: left center;
-    background-size: contain;
-}
-
-.promo__menu {
-    margin-bottom: 10px;
-    margin-left: 85px;
-}
-
-.promo__menu-item {
-    margin: 0 15px;
-    color: rgba(0, 0, 0, 0.87);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 12px;
-    &:hover {
-        color: #0068fc;
-    }
+    padding-top: 68px;
 }
 
 .promo__container {

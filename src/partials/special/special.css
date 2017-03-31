@@ -1,0 +1,109 @@
+.special {
+    padding: 0 10px;
+    width: 100%;
+    background-color: #f6fbff;
+}
+
+.special__content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 93px 0 100px;
+    max-width: 940px;
+    width: 100%;
+}
+
+.special__content {
+    width: calc((100% - var(--gridGutter))/12*7);
+}
+
+.special__title {
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom, rgba(255, 226, 88, 1) 0%, rgba(255, 226, 88, 1) 100%);
+    background-position: 0 91px;
+    background-size: 311px 16px;
+    background-repeat: no-repeat;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 1.17;
+}
+
+.special__subtitle {
+    margin-bottom: 41px;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: proxima-nova;
+    line-height: 1.67;
+}
+
+.special__mail {
+    font-size: 36px;
+    line-height: 1.33;
+    background: linear-gradient(to bottom, #cde8ff 0%, #cde8ff 100%);
+    background-position: 4px 24px;
+    background-size: 360px 16px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 22px;
+    &:hover {
+        color: #0078ff;
+    }
+}
+
+.special__phone {
+    font-size: 24px;
+    color: #000;
+    line-height: 1.25;
+    white-space: nowrap;
+    display: inline-block;
+    &:hover {
+        color: #0078ff;
+    }
+}
+
+.special__sidebar {
+    padding: 50px 20px 130px;
+    width: calc((100% - var(--gridGutter))/12*5);
+    background-color: #0078ff;
+    align-self: flex-start;
+}
+
+.special__sidebar-title {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 67px;
+}
+
+.special__cost {
+    font-size: 72px;
+    font-weight: bold;
+    position: relative;
+    line-height: 1.22;
+    letter-spacing: -2px;
+    color: #fff;
+    &::before {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.17;
+        color: #fff;
+        content: attr(data-from);
+        position: absolute;
+        left: 0;
+        top: -27px;
+    }
+    &::after {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.17;
+        color: #fff;
+        content: attr(data-to);
+        position: absolute;
+        left: 0;
+        bottom: -27px;
+    }
+}

@@ -1,0 +1,106 @@
+.quality {
+    padding: 0 10px;
+    width: 100%;
+    background: linear-gradient(to top, #fafafa 0%, #fafafa 320px, #f6fbff 320px, #f6fbff 100%);
+}
+
+.quality__content-wrap {
+    margin: 0 auto;
+    padding: 100px 0 50px;
+    max-width: 940px;
+    width: 100%;
+}
+
+.quality__title {
+    margin-bottom: 50px;
+    max-width: 460px;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.quality__subtitle {
+    margin-bottom: 68px;
+    width: 460px;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: proxima-nova;
+    line-height: 1.33;
+}
+
+.quality__items-wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.quality__item {
+    position: relative;
+    transition-duration: 1s;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    width: calc(50% - 10px);
+    height: 470px;
+    color: #fff;
+    &:nth-of-type(even) {
+        transform: translateY(-134px);
+    }
+}
+
+.quality__item-image {
+    @nest .quality__item:hover & {
+        opacity: .8;
+        transform: scale(1.05);
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    object-fit: cover;
+    object-position: center;
+}
+
+.quality__item-suptitle {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: futura-pt;
+}
+
+.quality__item-title {
+    position: relative;
+    z-index: 1;
+    font-weight: 900;
+    font-size: 22px;
+    font-family: futura-pt;
+}
+
+.quality__readmore {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    padding: 0 20px 0 75px;
+    width: calc(50% - 10px);
+    border: solid 1px #000000;
+    background-image: url(../images/quality-arrs.svg);
+    background-position: 40px center;
+    background-repeat: no-repeat;
+    color: #303132;
+    white-space: nowrap;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 108px;
+}
+
+.quality__readmore-items-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}

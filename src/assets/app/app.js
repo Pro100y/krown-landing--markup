@@ -9,7 +9,7 @@ const App = new Vue({
         customSelect: false,
         detectBrowser: true,
         disableUserSelect: false,
-        galleryLightbox: true,
+        galleryLightbox: false,
         infiniteAjaxScroll: false,
         pagePreloader: false,
         pixelPerfect: true,
@@ -19,8 +19,8 @@ const App = new Vue({
     methods: {
         pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-main--960.png",
-                show: true,
+                src: "/assets/images/theme-contacts--960.png",
+                show: false,
                 top: 0,
                 left: 282,
                 opacity: 0.2
@@ -32,7 +32,7 @@ const App = new Vue({
         },
         mPageScroll2id() {
             $("a[href*='#'], button[href*='#']").mPageScroll2id({
-                offset: 40,
+                offset: 0,
                 scrollSpeed: 1000,
                 scrollEasing: 'easeInOutCubic'
             });

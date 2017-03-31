@@ -18,7 +18,8 @@ Vue.component('advantages', {
 
             startSlide: 1, // starting slide on pageload
             arrows: true, // keyboard arrow navigation
-            dynamicHeight: true, // if true the height will dynamic and animated.
+            // dynamicHeight: false, // if true the height will dynamic and animated.
+            fixedHeight: false, // if true the height will dynamic and animated.
             useAnimations: true, // disables animations.
 
             easing: 'ease', // http://julian.com/research/velocity/#easing
@@ -35,6 +36,17 @@ Vue.component('advantages', {
             rotateY: 0, // animate Y acces rotation (val: 0deg-360deg)
             skewY: 0, // animate Y skew (val: 0deg-360deg)
             skewX: 0, // animate X skew (val: 0deg-360deg)
+        });
+
+
+        //фикс начальной высоты табов
+        var heightFix = function () {
+            $(".advantages .js-tabs-height")
+                .height($(".advantages__tab.active").outerHeight() + 42);
+        }
+        heightFix();
+        $(window).resize(function () {
+            heightFix();
         });
     }
 });

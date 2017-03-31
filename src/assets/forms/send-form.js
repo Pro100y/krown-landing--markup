@@ -9,9 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     |
     */
 
-    // кастомизация селекта
-    $('[data-form] select').selectric();
-
     // устанока маски на поля
     $('[data-form-phone-field]').mask("+7 (999) 999-99-99");
     $('[data-form-time-field]').mask("99:99");

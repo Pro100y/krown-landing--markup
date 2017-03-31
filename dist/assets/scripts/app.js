@@ -63,71 +63,131 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=advantages> <div class=advantages__content-wrap> <ul class=advantages__nav> <li class=\"advantages__nav-item advantages__nav-item--1\">Быстрый запуск</li> <li class=\"advantages__nav-item advantages__nav-item--2\">гарантия сроков</li> <li class=\"advantages__nav-item advantages__nav-item--3\">оплата</li> <li class=\"advantages__nav-item advantages__nav-item--4\">наш подход</li> <li class=\"advantages__nav-item advantages__nav-item--5\">адаптивность</li> <li class=\"advantages__nav-item advantages__nav-item--6\">исходники</li> </ul> <div class=advantages__tabs-wrap> <advantages-tab promo-title=\"Быстрый запуск работ\" promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=\"Быстрый запуск работ\" promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=\"Быстрый запуск работ\" promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=\"Быстрый запуск работ\" promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=\"Быстрый запуск работ\" promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=\"Быстрый запуск работ\" promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> </div> </div> </section> ";
+module.exports = "<section class=about-us> <div class=about-us__content-wrap> <header class=about-us__title>Информация о&nbsp;нашем агентстве</header> <p class=about-us__subtitle>информация</p> <p class=about-us__paragraph> Мы являемся обособленным подразделением digital-агентства <span class=about-us__paragraph-accent>KRŌWN</span>, которое занимается исключительно версткой готовых дизайн-макетов. <br>Если вам требуется собрать качественные HTML-шаблоны для сайта или почтовой рассылки из готового дизайна, и уложиться в срок - вы в нужном месте в нужное время. </p> <p class=about-us__paragraph>Умеем в pixel-perfect, понимаем и сохраняем задумки дизайнеров и, при необходимости, примем ваш анимационный прототип из Principle.</p> </div> </section>";
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = "<figure class=advantages__tab> <div class=advantages__tab-container> <div class=advantages__tab-promo> <p class=advantages__tab-promo-title>[[ promoTitle ]]</p> <p class=advantages__tab-promo-text>[[ promoText ]]</p> </div> <figcaption class=advantages__tab-content v-html=content></figcaption> </div> </figure> ";
+module.exports = "<section class=advantages> <div class=advantages__content-wrap> <ul class=advantages__nav> <li class=\"advantages__nav-item advantages__nav-item--1\">Быстрый запуск</li> <li class=\"advantages__nav-item advantages__nav-item--2\">гарантия сроков</li> <li class=\"advantages__nav-item advantages__nav-item--3\">оплата</li> <li class=\"advantages__nav-item advantages__nav-item--4\">наш подход</li> <li class=\"advantages__nav-item advantages__nav-item--5\">адаптивность</li> <li class=\"advantages__nav-item advantages__nav-item--6\">исходники</li> </ul> <div class=advantages__tabs-wrap> <advantages-tab promo-title=\"Быстрый запуск&nbsp;работ\" promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=\"Гарантия сроков\" promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=Оплата promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=\"Наш подход\" promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=Адаптивность promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> <advantages-tab promo-title=Исходники promo-text=\"Мы привыкли уважать бизнес-интересы своих заказчиков, поэтому со своей стороны мы делаем всё, чтобы экономить ваше время\" content=\"<h2>Какой порядок действий и что нужно для старта проекта?</h2>\n                <p>Для старта проекта необходимо внести аванс. Все работы по подготовке макетов к вёрстке начинаются после поступления аванса на наш расчётный счет. Для того чтобы зарезервировать ресурсы под ваш проект, достаточно вашего устного согласия с нашим предложением по бюджету и срокам. </p>\n                <h2>Как быстро я получу ответ менеджера?</h2>\n                <p>На первоначальную обработку заказа и подготовку списка уточняющих вопросов нам требуется порядка 1 часа. В выходные и праздничные дни может потребоваться немного больше времени.</p>\n                <h2>У меня уже есть техническое задание на вёрстку, как его вам передать?</h2>\n                <p>Вы можете прикрепить техническое задание и любые другие вспомогательные файлы непосредственно при оформлении заказа. Перетащите их мышкой в окно браузера или воспользуйтесь обычным загрузчиком. Также вы можете обратить внимание нашего менеджера на все существенные детали, которые сочтете нужными, уже в процессе общения. Пожалуйста, не волнуйтесь, мы умеем задавать правильные вопросы.</p>\"></advantages-tab> </div> </div> </section> ";
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=experience></section>";
+module.exports = "<figure class=advantages__tab> <div class=advantages__tab-container> <div class=advantages__tab-promo> <p class=advantages__tab-promo-title v-html=promoTitle></p> <p class=advantages__tab-promo-text>[[ promoText ]]</p> </div> <figcaption class=advantages__tab-content v-html=content></figcaption> </div> </figure> ";
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=faq> <header class=faq__title>Краткий FAQ</header> <ul class=faq__list data-accordion-group> <li class=faq__list-item v-for=\"item in faq.items\" data-accordion> <p class=faq__list-item-title data-control>[[ item.title ]]</p> <figure class=faq__list-item-content-wrap data-content> <figcaption class=faq__list-item-content>[[ item.text ]]</figcaption> </figure> </li> </ul> </section>";
+module.exports = "<section class=contacts> <div class=contacts__content-wrap> <address class=contacts__content> <header class=contacts__title>Контакты</header> <p class=contacts__text> г. Севастополь, <br>Фиолентовское шоссе, д.1 </p> <a href=mailto:verstka@krown.cc class=contacts__mail>verstka@krown.cc</a> <br> <a href=tel:+74959899857 class=contacts__phone>+7 (495) 989-98-57</a> </address> </div> <slot></slot> </section>";
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = "<form class=form-order action=/assets/forms/send-form.php :title=\"'Заказать лендинг с адреса: ' + location\" data-form> <header class=form-order__title>Заказать лендинг</header> <p class=form-order__subtitle>Оставьте Ваш номер телефона и мы перезвоним:</p> <figure class=\"form-order__items-wrap form-order__items-wrap--order\"> <div class=form-order__fields> <label for=\"\" class=form-order__label>Ваше имя:</label> <input type=text class=form-order__input name=ff1 placeholder=\"Введите ваше имя\"> <label for=\"\" class=form-order__label>Номер телефона*:</label> <input type=text class=form-order__input placeholder=\"+7 (495) 000-00-00\" name=ff2 data-form-phone-field required> <p class=form-order__status data-form-status></p> </div> <figcaption class=form-order__caption> <p class=form-order__caption-title>тариф:</p> <p class=form-order__plan>[[ plan ]]</p> <p class=form-order__plan-description>[[ planDescription ]]</p> <p class=form-order__cost> от <br>[[ cost ]] руб. </p> </figcaption> <button class=form-order__order data-form-btn>Оформить заказ</button> </figure> <figure class=\"form-order__items-wrap form-order__items-wrap--success\"> <header class=form-order__success-title>Спасибо за ваш заказ!</header> <p class=form-order__success-subtitle>Мы перезвоним вам в самое ближайшее время!</p> <a href=tel:+74959899857 class=form-order__success-phone>+7 (495) 989-98-57</a> </figure> </form>";
+module.exports = "<section class=experience> <div class=experience__content-wrap> <article class=experience__content> <header class=experience__title>Верстаем с 2012 года и знаем в&nbsp;этом&nbsp;толк</header> <p class=experience__subtitle>информация</p> <p class=experience__paragraph> Мы являемся обособленным подразделением digital&nbsp;-&nbsp;агентства <span class=experience__paragraph-accent>KRŌWN</span>, которое занимается исключительно версткой готовых дизайн&nbsp;-&nbsp;макетов. <br>Если вам требуется собрать качественные HTML&nbsp;-&nbsp;шаблоны для сайта или почтовой рассылки из готового дизайна, и уложиться в срок&nbsp;- вы в нужном месте в нужное время. </p> <p class=experience__paragraph>Умеем в pixel-perfect, понимаем и сохраняем задумки дизайнеров и, при необходимости, примем ваш анимационный прототип из Principle.</p> </article> <aside class=experience__sidebar> <header class=experience__sidebar-title>ключевые преимущества</header> <ul class=experience__sidebar-list> <li class=experience__sidebar-list-item>современные методологии;</li> <li class=experience__sidebar-list-item>высокие стандарты качества;</li> <li class=experience__sidebar-list-item>специалисты в штате;</li> <li class=experience__sidebar-list-item>работаем по NDA;</li> <li class=experience__sidebar-list-item>более 5 лет опыта;</li> </ul> </aside> </div> </section>";
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = "<form class=form-question action=/assets/forms/send-form.php :title=\"'Остались вопросы? с адреса: ' + location\" data-form> <figure class=form-question__success> <p class=\"form-question__title form-question__title--success\">Спасибо за ваше обращение</p> <p class=\"form-question__subtitle form-question__subtitle--success\">Мы перезвоним вам в самое ближайшее время!</p> </figure> <p class=form-question__title>Остались вопросы?</p> <p class=form-question__subtitle>Оставьте Ваш номер телефона и мы перезвоним с бесплатной консультацией:</p> <div class=form-question__input-wrap> <input type=text class=form-question__input placeholder=\"+7 (495) 000-00-00\" name=ff1 required data-form-phone-field> <button data-form-btn class=form-question__button></button> </div> <p data-form-status class=form-question__status>Статус отправки</p> <p class=form-question__description>Или звоните нам по номеру +7 (495) 989-98-57</p> </form>";
+module.exports = "<section class=faq> <header class=faq__title>Краткий FAQ</header> <ul class=faq__list data-accordion-group> <li class=faq__list-item v-for=\"item in faq.items\" data-accordion> <p class=faq__list-item-title data-control>[[ item.title ]]</p> <figure class=faq__list-item-content-wrap data-content> <figcaption class=faq__list-item-content>[[ item.text ]]</figcaption> </figure> </li> </ul> </section>";
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = "<transition name=lightbox--animation-> <section class=lightbox @click.self=\"$emit('close')\"> <figure class=lightbox__container> <button class=lightbox__close @click=\"$emit('close')\"></button> <slot name=lightbox__container>Содержимое лайтбокса</slot> </figure> </section> </transition>";
+module.exports = "<form class=form-order action=/assets/forms/send-form.php :title=\"'Заказать лендинг с адреса: ' + location\" data-form> <header class=form-order__title>Заказать лендинг</header> <p class=form-order__subtitle>Оставьте Ваш номер телефона и мы перезвоним:</p> <figure class=\"form-order__items-wrap form-order__items-wrap--order\"> <div class=form-order__fields> <label for=\"\" class=form-order__label>Ваше имя:</label> <input type=text class=form-order__input name=ff1 placeholder=\"Введите ваше имя\"> <label for=\"\" class=form-order__label>Номер телефона*:</label> <input type=text class=form-order__input placeholder=\"+7 (495) 000-00-00\" name=ff2 data-form-phone-field required> <p class=form-order__status data-form-status></p> </div> <figcaption class=form-order__caption> <p class=form-order__caption-title>тариф:</p> <p class=form-order__plan>[[ plan ]]</p> <p class=form-order__plan-description>[[ planDescription ]]</p> <p class=form-order__cost> от <br>[[ cost ]] руб. </p> </figcaption> <button class=form-order__order data-form-btn>Оформить заказ</button> </figure> <figure class=\"form-order__items-wrap form-order__items-wrap--success\"> <header class=form-order__success-title>Спасибо за ваш заказ!</header> <p class=form-order__success-subtitle>Мы перезвоним вам в самое ближайшее время!</p> <a href=tel:+74959899857 class=form-order__success-phone>+7 (495) 989-98-57</a> </figure> </form>";
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=promo> <div class=promo__content-wrap> <div class=promo__header> <a href=/ class=promo__logo></a> <nav class=promo__menu> <a href=# class=promo__menu-item>О нас</a> <a href=# class=promo__menu-item>аутсорсинг</a> <a href=# class=promo__menu-item>портфолио</a> <a href=# class=promo__menu-item>контакты</a> </nav> </div> <div class=promo__container> <div class=promo__content> <h1 class=promo__title>Качественная и&nbsp;быстрая верстка ваших дизайн-макетов</h1> <p class=promo__subtitle>Превратим ваши psd/sketch макеты в структурированный набор html/css файлов. Сохраним pixel-perfect, прикрутим анимацию.</p> <div class=promo__items-wrap> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--1\"></div> <figcaption class=promo__item-caption>sketch</figcaption> </figure> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--2\"></div> <figcaption class=promo__item-caption>photoshop</figcaption> </figure> </div> <button type=button class=promo__order>заказать верстку</button> <a href=#quality class=promo__readmore>смотреть примеры работ</a> </div> <div class=promo__image-wrap> <img src=/assets/images/promo-2.jpg alt=\"\" class=\"promo__image promo__image--1 wow promoImage\"> <img src=/assets/images/promo-3.jpg alt=\"\" class=\"promo__image promo__image--2 wow promoImage\"> </div> </div> </div> </header>";
+module.exports = "<form class=form-question action=/assets/forms/send-form.php :title=\"'Остались вопросы? с адреса: ' + location\" data-form> <figure class=form-question__success> <p class=\"form-question__title form-question__title--success\">Спасибо за ваше обращение</p> <p class=\"form-question__subtitle form-question__subtitle--success\">Мы перезвоним вам в самое ближайшее время!</p> </figure> <p class=form-question__title>Остались вопросы?</p> <p class=form-question__subtitle>Оставьте Ваш номер телефона и мы перезвоним с бесплатной консультацией:</p> <div class=form-question__input-wrap> <input type=text class=form-question__input placeholder=\"+7 (495) 000-00-00\" name=ff1 required data-form-phone-field> <button data-form-btn class=form-question__button></button> </div> <p data-form-status class=form-question__status>Статус отправки</p> <p class=form-question__description>Или звоните нам по номеру +7 (495) 989-98-57</p> </form>";
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=quality></section>";
+module.exports = "<section class=keys> <div class=keys__content-wrap> <header class=keys__title> ключевые <br>преимущества </header> <div class=keys__items-wrap> <figure class=keys__item>современные методологии</figure> <figure class=keys__item>высокие стандарты качества</figure> <figure class=keys__item>специалисты в штате</figure> <figure class=keys__item>работаем <br>по NDA</figure> <figure class=keys__item>более 5 лет опыта</figure> </div> </div> </section>";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=site-footer> <div class=site-footer__content-wrap> <div class=site-footer__form-question-wrap> <form-question></form-question> </div> <div class=site-footer__faq-wrap> <faq></faq> </div> </div> <hr class=site-footer__hr> <div class=site-footer__content-wrap> <a href=mailto:hello.krown.cc class=site-footer__email>HELLO@KROWN.CC</a> <span class=site-footer__city>Севастополь</span> <a href=tel:+74959899857 class=site-footer__phone>+7 (495) 989-98-57</a> </div> </footer>";
+module.exports = "<transition name=lightbox--animation-> <section class=lightbox @click.self=\"$emit('close')\"> <figure class=lightbox__container> <button class=lightbox__close @click=\"$emit('close')\"></button> <slot name=lightbox__container>Содержимое лайтбокса</slot> </figure> </section> </transition>";
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=linking> <button class=linking__button @click=\"showModal=!showModal; changeScroll();\"></button> <transition name=linking--animation-> <figure class=linking__modal v-show=showModal> <div class=linking__modal-content-wrap> <header class=linking__modal-header> <a href=\"\" class=linking__modal-logo></a> <a href=tel:+74959899857 class=linking__modal__phone>+7 (495) 989-98-57</a> </header> <p class=linking__modal-title>оказываем услуги:</p> <div class=linking__modal-items-wrap> <a href=\"\" class=\"linking__modal-item linking__modal-item--1\">Разработка landing page</a> <a href=\"\" class=\"linking__modal-item linking__modal-item--2\">Верстка дизайн-макетов</a> <a href=\"\" class=\"linking__modal-item linking__modal-item--3\"> Поддержка сайтов <br>на 1С-Битрикс</a> </div> <footer class=linking__modal-footer>Севастополь [[ year ]]</footer> </div> </figure> </transition> </section>";
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=map-widget id=map-widget> <slot></slot> </div>";
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=navigation> <div class=navigation__content-wrap> <a href=/ class=navigation__logo></a> <nav class=navigation__menu> <a href=# class=navigation__menu-item>О нас</a> <a href=# class=navigation__menu-item>аутсорсинг</a> <a href=# class=navigation__menu-item>портфолио</a> <a href=# class=navigation__menu-item>контакты</a> </nav> </div> </section>";
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=projects> <div class=projects__content-wrap> <header class=projects__title>Оцените качество нашей верстки по проектам наших клиентов</header> <section class=projects__gallery> <nav class=projects__gallery-nav> <button class=\"projects__gallery-nav-item projects__gallery-nav-item--active\" data-filter=*>Все проекты</button> <button class=projects__gallery-nav-item data-filter=[data-shop]>интернет-магазины</button> <button class=projects__gallery-nav-item data-filter=[data-landing]>лендинги</button> <button class=projects__gallery-nav-item data-filter=[data-special]>спец. проекты</button> </nav> <div class=projects__gallery-items-wrap> <projects-gallery-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\" data-special></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann data-shop></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\" data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\" data-special></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann data-shop></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\" data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\" data-special></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann data-shop></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\" data-landing></projects-gallery-item> </div> </section> </div> </section>";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = "<a :href=link class=projects__gallery-item data-transition-off> <img :src=image :alt=title class=projects__gallery-item-image data-adaptive-background> <p class=projects__gallery-item-suptitle>[[ suptitle ]]</p> <p class=projects__gallery-item-title>[[ title ]]</p> </a>";
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+module.exports = "<header class=promo> <div class=promo__content-wrap> <div class=promo__container> <div class=promo__content> <h1 class=promo__title>Качественная и&nbsp;быстрая верстка ваших дизайн-макетов</h1> <p class=promo__subtitle>Превратим ваши psd/sketch макеты в структурированный набор html/css файлов. Сохраним pixel-perfect, прикрутим анимацию.</p> <div class=promo__items-wrap> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--1\"></div> <figcaption class=promo__item-caption>sketch</figcaption> </figure> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--2\"></div> <figcaption class=promo__item-caption>photoshop</figcaption> </figure> </div> <button type=button class=promo__order>заказать верстку</button> <a href=#quality class=promo__readmore>смотреть примеры работ</a> </div> <div class=promo__image-wrap> <img src=/assets/images/promo-2.jpg alt=\"\" class=\"promo__image promo__image--1 wow promoImage\"> <img src=/assets/images/promo-3.jpg alt=\"\" class=\"promo__image promo__image--2 wow promoImage\"> </div> </div> </div> </header>";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=quality id=quality> <div class=quality__content-wrap> <header class=quality__title>Качество нашей верстки говорит за себя</header> <p class=quality__subtitle>Стабильность исполнения на высоком уровне позволяет нашим постоянным клиентам всегда быть уверенными в результате</p> <div class=quality__items-wrap> <quality-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\"></quality-item> <quality-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva></quality-item> <quality-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann></quality-item> <quality-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\"></quality-item> <button class=quality__readmore v-show=!readmore @click=\"readmore = true\">полный список работ</button> <transition enter-active-class=\"animated fadeIn\" leave-active-class=\"animated fadeOut\"> <section class=quality__readmore-items-wrap v-show=readmore> <quality-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva></quality-item> <quality-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann></quality-item> <quality-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\"></quality-item> <quality-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\"></quality-item> </section> </transition> </div> </div> </section>";
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports) {
+
+module.exports = "<a :href=link class=quality__item> <img :src=image :alt=title class=quality__item-image data-adaptive-background> <p class=quality__item-suptitle>[[ suptitle ]]</p> <p class=quality__item-title>[[ title ]]</p> </a>";
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+module.exports = "<footer class=site-footer> <div class=site-footer__content-wrap> <div class=site-footer__form-question-wrap> <form-question></form-question> </div> <div class=site-footer__faq-wrap> <faq></faq> </div> </div> <hr class=site-footer__hr> <div class=site-footer__content-wrap> <a href=mailto:hello.krown.cc class=site-footer__email>HELLO@KROWN.CC</a> <span class=site-footer__city>Севастополь</span> <a href=tel:+74959899857 class=site-footer__phone>+7 (495) 989-98-57</a> </div> </footer>";
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=special> <div class=special__content-wrap> <article class=special__content> <header class=special__title>Специальное предложение для студий и агентств</header> <p class=special__subtitle>Мы открыты для сотрудничества, и предлагаем агентствам и студиям выгодные условия по аутсорсингу. Условия работы обсуждаются индивидуально, по всем вопросам обращайтесь:</p> <a href=mailto: class=special__mail>outsource@krown.cc</a> <a href=tel: class=special__phone>+7 (495) 989-98-57</a> </article> <aside class=special__sidebar> <p class=special__sidebar-title>почасовая тарификация</p> <p class=special__cost data-from=от data-to=\"за час\">800 р.</p> </aside> </div> </section>";
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -180,9 +240,6 @@ document.addEventListener('DOMContentLoaded', function () {
     | Валидация полей и отправка формы
     |
     */
-
-    // кастомизация селекта
-    $('[data-form] select').selectric();
 
     // устанока маски на поля
     $('[data-form-phone-field]').mask("+7 (999) 999-99-99");
@@ -268,15 +325,19 @@ document.addEventListener('DOMContentLoaded', function () {
         return false;
     });
 });
+Vue.component('about-us', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(0)
+});
 Vue.component('advantages-tab', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(1),
+    template: __webpack_require__(2),
     props: ['promoTitle', 'promoText', 'content']
 });
 
 Vue.component('advantages', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(0),
+    template: __webpack_require__(1),
     mounted: function mounted() {
         $('.advantages').tabtab({
             tabMenu: '.advantages__nav', // direct container of the tab menu items
@@ -284,7 +345,8 @@ Vue.component('advantages', {
 
             startSlide: 1, // starting slide on pageload
             arrows: true, // keyboard arrow navigation
-            dynamicHeight: true, // if true the height will dynamic and animated.
+            // dynamicHeight: false, // if true the height will dynamic and animated.
+            fixedHeight: false, // if true the height will dynamic and animated.
             useAnimations: true, // disables animations.
 
             easing: 'ease', // http://julian.com/research/velocity/#easing
@@ -301,15 +363,28 @@ Vue.component('advantages', {
             rotateY: 0, // animate Y acces rotation (val: 0deg-360deg)
             skewY: 0, // animate Y skew (val: 0deg-360deg)
             skewX: 0 });
+
+        //фикс начальной высоты табов
+        var heightFix = function heightFix() {
+            $(".advantages .js-tabs-height").height($(".advantages__tab.active").outerHeight() + 42);
+        };
+        heightFix();
+        $(window).resize(function () {
+            heightFix();
+        });
     }
+});
+Vue.component('contacts', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(3)
 });
 Vue.component('experience', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(2)
+    template: __webpack_require__(4)
 });
 Vue.component('faq', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(3),
+    template: __webpack_require__(5),
     data: function data() {
         return {
             faq: {
@@ -339,7 +414,7 @@ Vue.component('faq', {
 });
 Vue.component('form-order', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(4),
+    template: __webpack_require__(6),
     props: ['plan', 'planDescription', 'cost'],
     computed: {
         location: function (_location) {
@@ -359,7 +434,7 @@ Vue.component('form-order', {
 });
 Vue.component('form-question', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(5),
+    template: __webpack_require__(7),
     computed: {
         location: function (_location2) {
             function location() {
@@ -376,21 +451,162 @@ Vue.component('form-question', {
         })
     }
 });
-Vue.component('lightbox', {
-    delimiters: ['[[', ']]'],
-    template: __webpack_require__(6)
-});
-Vue.component('promo', {
-    delimiters: ['[[', ']]'],
-    template: __webpack_require__(7)
-});
-Vue.component('quality', {
+Vue.component('keys', {
     delimiters: ['[[', ']]'],
     template: __webpack_require__(8)
 });
+Vue.component('lightbox', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(9)
+});
+Vue.component('linking', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(10),
+    data: function data() {
+        return {
+            showModal: false
+        };
+    },
+
+    computed: {
+        year: function year() {
+            var currentYear = new Date();
+            return currentYear.getFullYear();
+        }
+    },
+    methods: {
+        changeScroll: function changeScroll() {
+            if (this.showModal === true) {
+                $('html').attr('data-lock-scroll', '').css({
+                    'paddingRight': '15px'
+                });
+            } else {
+                setTimeout(function () {
+                    $('html').removeAttr('data-lock-scroll').css({
+                        'paddingRight': '0px'
+                    });
+                }, 500);
+            }
+        }
+    }
+});
+Vue.component('map-widget', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(11),
+    props: ['address'],
+    mounted: function mounted() {
+
+        var query = this.address;
+
+        // Yandex Map
+        document.addEventListener('DOMContentLoaded', function () {
+
+            ymaps.ready().done(function (ym) {
+                var map = new ym.Map('map-widget', {
+                    center: [44.58330422853194, 33.47989102536938],
+                    zoom: 17,
+                    controls: []
+                }, {
+                    searchControlProvider: 'yandex#search'
+                });
+
+                var placemark = new ymaps.Placemark([44.58330422853194, 33.48230501348279], {
+                    hintContent: 'г. Севастополь, Фиолентовское шоссе, д.1',
+                    balloonContent: 'KROWN'
+                });
+
+                map.geoObjects.add(placemark);
+
+                map.behaviors.disable('scrollZoom');
+            });
+        });
+    }
+});
+Vue.component('navigation', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(12)
+});
+Vue.component('projects-gallery-item', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(14),
+    props: ['link', 'image', 'suptitle', 'title'],
+    mounted: function mounted() {
+        $.adaptiveBackground.run({
+            selector: '[data-adaptive-background]',
+            parent: null,
+            exclude: ['rgb(0,0,0)', 'rgba(255,255,255)'],
+            normalizeTextColor: true,
+            normalizedTextColors: {
+                light: "#fff",
+                dark: "#333"
+            },
+            lumaClasses: {
+                light: "ab-light",
+                dark: "ab-dark"
+            }
+        });
+    }
+});
+
+Vue.component('projects', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(13),
+    mounted: function mounted() {
+
+        var $grid = $('.projects__gallery-items-wrap').isotope({
+            itemSelector: '.projects__gallery-item'
+        });
+        $('.projects__gallery-nav').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
+
+        $('.projects__gallery-nav-item').click(function () {
+            $('.projects__gallery-nav-item--active').removeClass('projects__gallery-nav-item--active');
+            $(this).addClass('projects__gallery-nav-item--active');
+        });
+    }
+});
+Vue.component('promo', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(15)
+});
+Vue.component('quality-item', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(17),
+    props: ['link', 'image', 'suptitle', 'title'],
+    mounted: function mounted() {
+        $.adaptiveBackground.run({
+            selector: '[data-adaptive-background]',
+            parent: null,
+            exclude: ['rgb(0,0,0)', 'rgba(255,255,255)'],
+            normalizeTextColor: true,
+            normalizedTextColors: {
+                light: "#fff",
+                dark: "#333"
+            },
+            lumaClasses: {
+                light: "ab-light",
+                dark: "ab-dark"
+            }
+        });
+    }
+});
+
+Vue.component('quality', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(16),
+    data: function data() {
+        return {
+            readmore: false
+        };
+    }
+});
 Vue.component('site-footer', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(9),
+    template: __webpack_require__(18),
     computed: {
         location: function (_location3) {
             function location() {
@@ -407,6 +623,10 @@ Vue.component('site-footer', {
         })
     }
 });
+Vue.component('special', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(19)
+});
 var App = new Vue({
     delimiters: ['[[', ']]'],
     el: '#app',
@@ -418,7 +638,7 @@ var App = new Vue({
         customSelect: false,
         detectBrowser: true,
         disableUserSelect: false,
-        galleryLightbox: true,
+        galleryLightbox: false,
         infiniteAjaxScroll: false,
         pagePreloader: false,
         pixelPerfect: true,
@@ -428,8 +648,8 @@ var App = new Vue({
     methods: {
         pixlayout: function pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-main--960.png",
-                show: true,
+                src: "/assets/images/theme-contacts--960.png",
+                show: false,
                 top: 0,
                 left: 282,
                 opacity: 0.2
@@ -451,7 +671,7 @@ var App = new Vue({
         }),
         mPageScroll2id: function mPageScroll2id() {
             $("a[href*='#'], button[href*='#']").mPageScroll2id({
-                offset: 40,
+                offset: 0,
                 scrollSpeed: 1000,
                 scrollEasing: 'easeInOutCubic'
             });
