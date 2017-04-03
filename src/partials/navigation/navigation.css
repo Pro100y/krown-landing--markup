@@ -25,7 +25,7 @@
 
 .navigation__menu {
     margin-bottom: 10px;
-    margin-left: 85px;
+    margin-left: auto;
 }
 
 .navigation__menu-item {
@@ -37,5 +37,18 @@
     font-size: 12px;
     &:hover {
         color: #0068fc;
+    }
+}
+
+.navigation__menu-order {
+    font-size: 16px;
+    color: #fff;
+    padding: 22px;
+    line-height: 1;
+    border-radius: 58px;
+    background-color: #0068fc;
+    margin-left: 15px;
+    &:hover {
+        background-color: rgba(42, 138, 234, 0.8);
     }
 }

@@ -1,13 +1,41 @@
 Vue.component('quality-item', {
     delimiters: ['[[', ']]'],
     template: require('./quality/quality__item.htm'),
+    data() {
+        return {
+            showWorkFrame: false
+        }
+    },
     props: [
         'link',
         'image',
         'suptitle',
         'title'
     ],
-    mounted() {
+    methods: {
+        changeScroll: function () {
+            if (this.showWorkFrame === true) {
+                $('html')
+                    .attr('data-lock-scroll', '')
+                    .css({
+                        'paddingRight': '15px'
+                    });
+            } else {
+                setTimeout(function () {
+                    $('html')
+                        .removeAttr('data-lock-scroll')
+                        .css({
+                            'paddingRight': '0px'
+                        });
+                }, 500);
+            }
+
+        }
+    },
+    mounted: function () {
+
+        var vm = this;
+
         $.adaptiveBackground.run({
             selector: '[data-adaptive-background]',
             parent: null,

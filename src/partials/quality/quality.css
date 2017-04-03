@@ -36,18 +36,23 @@
 }
 
 .quality__item {
+    width: calc(50% - 10px);
+    cursor: pointer;
+}
+
+.quality__item-content-wrap {
+    @nest .quality__item:nth-of-type(even) & {
+        transform: translateY(-134px);
+    }
     position: relative;
-    transition-duration: 1s;
     display: block;
     overflow: hidden;
     margin-bottom: 30px;
     padding: 30px 20px;
-    width: calc(50% - 10px);
+    width: 100%;
     height: 470px;
     color: #fff;
-    &:nth-of-type(even) {
-        transform: translateY(-134px);
-    }
+    transition-duration: 1s;
 }
 
 .quality__item-image {

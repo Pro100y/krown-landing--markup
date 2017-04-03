@@ -40,6 +40,7 @@ const webpackStream = require('webpack-stream');
 
 // подключение ресурсов проекта
 const project = {
+    path:'/Applications/MAMP/htdocs/server/',
     images: function () {
         let allImages = [
             'src/assets/forms/images/*.*',
@@ -84,6 +85,8 @@ const project = {
             // 'bower_components/nstSlider/dist/jquery.nstSlider.min.css',
             // 'bower_components/jquery-selectric/public/selectric.css',
             // 'bower_components/fotorama/fotorama.css',
+            'bower_components/formstone/dist/css/themes/light.css',
+            'bower_components/formstone/dist/css/upload.css',
 
         ];
         return vendorCSS;
@@ -142,6 +145,8 @@ const project = {
             // 'bower_components/parallax.js/parallax.min.js',
             // 'bower_components/maphilight/jquery.maphilight.js',
             'bower_components/adaptive.background/src/jquery.adaptive-backgrounds.js',
+            'bower_components/formstone/dist/js/core.js',
+            'bower_components/formstone/dist/js/upload.js',
 
             // Плагины для разработки
             'src/assets/dev/jquery.pixlayout.0.9.7.js'
@@ -249,7 +254,7 @@ const config = {
 // наборы gulp тасков
 gulp.task('default', [
     // 'del--temp',
-    'connect',
+    // 'connect',
     'htm',
     'css--vendor',
     'css--app',
@@ -264,7 +269,7 @@ gulp.task('default', [
     'watch'
 ]);
 gulp.task('build', [
-    'connect',
+    // 'connect',
     'htm--build',
     'css--base64',
     'js--build--vendor',
@@ -285,12 +290,12 @@ gulp.task('build', [
 |
 */
 
-gulp.task('connect', function () {
-    connect.server({
-        root:       'dist',
-        livereload: true
-    });
-});
+// gulp.task('connect', function () {
+//     connect.server({
+//         root:       'dist',
+//         livereload: true
+//     });
+// });
 
 
 /*
@@ -371,11 +376,13 @@ gulp.task('css--build--app'/*, ['images--build']*/, function () {
 
     let srcPath  = project.appCSS();
     let distPath = 'dist/assets/styles/';
+    let projectPath = project.path + '/assets/styles/';
 
     return gulp.src(srcPath)
         .pipe(concat('app.css'))
         .pipe(postcss(config.postcssBuild))
-        .pipe(gulp.dest(distPath));
+        .pipe(gulp.dest(distPath))
+        .pipe(gulp.dest(projectPath));
 
 });
 

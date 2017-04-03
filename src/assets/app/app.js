@@ -19,7 +19,7 @@ const App = new Vue({
     methods: {
         pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-contacts--960.png",
+                src: "/assets/images/theme-order--960.png",
                 show: false,
                 top: 0,
                 left: 282,

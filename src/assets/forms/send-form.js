@@ -51,7 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // если есть поля с ошибками то сообщаем об этом пользователю
         if ($f.find('[data-form-field-invalid]').length) {
-            $s.html(status[0]).slideDown(500);
+            $f.find(':not([data-form-field-invalid]) + [data-form-status]').slideUp(500);
+            $f.find('[data-form-field-invalid] + [data-form-status]').slideDown(500);
             return false;
         }
 

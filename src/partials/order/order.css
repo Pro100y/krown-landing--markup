@@ -1,0 +1,36 @@
+.order {
+    padding: 0 10px;
+    width: 100%;
+    background-color: #f6fbff;
+}
+
+.order__content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 93px 0 100px;
+    max-width: 940px;
+    width: 100%;
+}
+
+.order__title {
+    margin-bottom: 51px;
+    background: linear-gradient(to bottom, rgba(255, 226, 88, 1) 0%, rgba(255, 226, 88, 1) 100%);
+    background-position: 0 91px;
+    background-size: 245px 16px;
+    background-repeat: no-repeat;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 1.17;
+    max-width: 540px;
+}
+
+.order__subtitle {
+    margin-bottom: 51px;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: proxima-nova;
+    line-height: 1.33;
+
+}

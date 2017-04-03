@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 20);
+/******/ 	return __webpack_require__(__webpack_require__.s = 24);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -106,88 +106,112 @@ module.exports = "<section class=faq> <header class=faq__title>Краткий FA
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = "<form class=form-order action=/assets/forms/send-form.php :title=\"'Заказать лендинг с адреса: ' + location\" data-form> <header class=form-order__title>Заказать лендинг</header> <p class=form-order__subtitle>Оставьте Ваш номер телефона и мы перезвоним:</p> <figure class=\"form-order__items-wrap form-order__items-wrap--order\"> <div class=form-order__fields> <label for=\"\" class=form-order__label>Ваше имя:</label> <input type=text class=form-order__input name=ff1 placeholder=\"Введите ваше имя\"> <label for=\"\" class=form-order__label>Номер телефона*:</label> <input type=text class=form-order__input placeholder=\"+7 (495) 000-00-00\" name=ff2 data-form-phone-field required> <p class=form-order__status data-form-status></p> </div> <figcaption class=form-order__caption> <p class=form-order__caption-title>тариф:</p> <p class=form-order__plan>[[ plan ]]</p> <p class=form-order__plan-description>[[ planDescription ]]</p> <p class=form-order__cost> от <br>[[ cost ]] руб. </p> </figcaption> <button class=form-order__order data-form-btn>Оформить заказ</button> </figure> <figure class=\"form-order__items-wrap form-order__items-wrap--success\"> <header class=form-order__success-title>Спасибо за ваш заказ!</header> <p class=form-order__success-subtitle>Мы перезвоним вам в самое ближайшее время!</p> <a href=tel:+74959899857 class=form-order__success-phone>+7 (495) 989-98-57</a> </figure> </form>";
+module.exports = "<section class=file-upload> <figure class=\"file-upload__dropzone / upload\"> <p class=file-upload__dropzone-title>Перетащите файлы проекта сюда</p> <p class=file-upload__dropzone-subtitle> Вы можете приложить исходники макетов, экспорты, <br>а так же дополнительное тех задание по верстке если оно у вас есть </p> </figure> <div class=file-upload__items-wrap> <p class=file-upload__items-title v-show=showItemsTitle>Вы загрузили:</p> <ol class=\"file-upload__list file-upload__list--done / filelist complete\"></ol> <ol class=\"file-upload__list file-upload__list--progress / filelist queue\"></ol> <button type=button class=\"file-upload__cancel-all / cancel_all\" v-if=showCancelAllButton>Отменить загрузку</button> </div> </section> ";
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports) {
 
-module.exports = "<form class=form-question action=/assets/forms/send-form.php :title=\"'Остались вопросы? с адреса: ' + location\" data-form> <figure class=form-question__success> <p class=\"form-question__title form-question__title--success\">Спасибо за ваше обращение</p> <p class=\"form-question__subtitle form-question__subtitle--success\">Мы перезвоним вам в самое ближайшее время!</p> </figure> <p class=form-question__title>Остались вопросы?</p> <p class=form-question__subtitle>Оставьте Ваш номер телефона и мы перезвоним с бесплатной консультацией:</p> <div class=form-question__input-wrap> <input type=text class=form-question__input placeholder=\"+7 (495) 000-00-00\" name=ff1 required data-form-phone-field> <button data-form-btn class=form-question__button></button> </div> <p data-form-status class=form-question__status>Статус отправки</p> <p class=form-question__description>Или звоните нам по номеру +7 (495) 989-98-57</p> </form>";
+module.exports = "<form class=form-order action=/assets/forms/send-form.php :title=\"'Заказать лендинг с адреса: ' + location\" data-form> <header class=form-order__title>Заказать лендинг</header> <p class=form-order__subtitle>Оставьте Ваш номер телефона и мы перезвоним:</p> <figure class=\"form-order__items-wrap form-order__items-wrap--order\"> <div class=form-order__fields> <label for=\"\" class=form-order__label>Ваше имя:</label> <input type=text class=form-order__input name=ff1 placeholder=\"Введите ваше имя\"> <label for=\"\" class=form-order__label>Номер телефона*:</label> <input type=text class=form-order__input placeholder=\"+7 (495) 000-00-00\" name=ff2 data-form-phone-field required> <p class=form-order__status data-form-status></p> </div> <figcaption class=form-order__caption> <p class=form-order__caption-title>тариф:</p> <p class=form-order__plan>[[ plan ]]</p> <p class=form-order__plan-description>[[ planDescription ]]</p> <p class=form-order__cost> от <br>[[ cost ]] руб. </p> </figcaption> <button class=form-order__order data-form-btn>Оформить заказ</button> </figure> <figure class=\"form-order__items-wrap form-order__items-wrap--success\"> <header class=form-order__success-title>Спасибо за ваш заказ!</header> <p class=form-order__success-subtitle>Мы перезвоним вам в самое ближайшее время!</p> <a href=tel:+74959899857 class=form-order__success-phone>+7 (495) 989-98-57</a> </figure> </form>";
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=keys> <div class=keys__content-wrap> <header class=keys__title> ключевые <br>преимущества </header> <div class=keys__items-wrap> <figure class=keys__item>современные методологии</figure> <figure class=keys__item>высокие стандарты качества</figure> <figure class=keys__item>специалисты в штате</figure> <figure class=keys__item>работаем <br>по NDA</figure> <figure class=keys__item>более 5 лет опыта</figure> </div> </div> </section>";
+module.exports = "<form class=form-question action=/assets/forms/send-form.php :title=\"'Остались вопросы? с адреса: ' + location\" data-form> <figure class=form-question__success> <p class=\"form-question__title form-question__title--success\">Спасибо за ваше обращение</p> <p class=\"form-question__subtitle form-question__subtitle--success\">Мы перезвоним вам в самое ближайшее время!</p> </figure> <p class=form-question__title>Остались вопросы?</p> <p class=form-question__subtitle>Оставьте Ваш номер телефона и мы перезвоним с бесплатной консультацией:</p> <div class=form-question__input-wrap> <input type=text class=form-question__input placeholder=\"+7 (495) 000-00-00\" name=ff1 required data-form-phone-field> <button data-form-btn class=form-question__button></button> </div> <p data-form-status class=form-question__status>Статус отправки</p> <p class=form-question__description>Или звоните нам по номеру +7 (495) 989-98-57</p> </form>";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = "<transition name=lightbox--animation-> <section class=lightbox @click.self=\"$emit('close')\"> <figure class=lightbox__container> <button class=lightbox__close @click=\"$emit('close')\"></button> <slot name=lightbox__container>Содержимое лайтбокса</slot> </figure> </section> </transition>";
+module.exports = "<form action=/assets/forms/send-form.php class=form-upload data-form> <ul class=form-upload__nav> <li class=form-upload__nav-item>МАКЕТЫ</li> <li class=form-upload__nav-item>ССЫЛКА</li> </ul> <section class=form-upload__tabs-wrap> <figure class=form-upload__tab> <file-upload @recalc-tab-heigth=heightFix();></file-upload> </figure> <figure class=form-upload__tab> <input type=text class=form-upload__link-field name=link placeholder=\"Укажите ссылку на скачаивание файлов проекта\"> </figure> </section> <div class=form-upload__fields-wrap> <label for=\"\" class=form-upload__label>ФИО:</label> <input type=text class=form-upload__input name=name placeholder=\"Ваше имя\"> <label for=\"\" class=form-upload__label>Электронная почта*:</label> <input type=text class=form-upload__input name=email placeholder=\"Ваш email\" required> <p class=form-upload__status data-form-status>Пожалуйста, укажите электронную почту</p> <label for=\"\" class=form-upload__label>Скайп:</label> <input type=text class=form-upload__input name=skype placeholder=\"Ваш скайп-логин\"> <label for=\"\" class=form-upload__label>Номер телефона*:</label> <input type=text class=form-upload__input name=phone placeholder=\"+7 (___) ___-__-__\" data-form-phone-field required> <p class=form-upload__status data-form-status>Пожалуйста, укажите номер телефона</p> <button class=form-upload__send data-form-btn>заказать верстку</button> </div> </form>";
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=linking> <button class=linking__button @click=\"showModal=!showModal; changeScroll();\"></button> <transition name=linking--animation-> <figure class=linking__modal v-show=showModal> <div class=linking__modal-content-wrap> <header class=linking__modal-header> <a href=\"\" class=linking__modal-logo></a> <a href=tel:+74959899857 class=linking__modal__phone>+7 (495) 989-98-57</a> </header> <p class=linking__modal-title>оказываем услуги:</p> <div class=linking__modal-items-wrap> <a href=\"\" class=\"linking__modal-item linking__modal-item--1\">Разработка landing page</a> <a href=\"\" class=\"linking__modal-item linking__modal-item--2\">Верстка дизайн-макетов</a> <a href=\"\" class=\"linking__modal-item linking__modal-item--3\"> Поддержка сайтов <br>на 1С-Битрикс</a> </div> <footer class=linking__modal-footer>Севастополь [[ year ]]</footer> </div> </figure> </transition> </section>";
+module.exports = "<section class=keys> <div class=keys__content-wrap> <header class=keys__title> ключевые <br>преимущества </header> <div class=keys__items-wrap> <figure class=keys__item>современные методологии</figure> <figure class=keys__item>высокие стандарты качества</figure> <figure class=keys__item>специалисты в штате</figure> <figure class=keys__item>работаем <br>по NDA</figure> <figure class=keys__item>более 5 лет опыта</figure> </div> </div> </section>";
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=map-widget id=map-widget> <slot></slot> </div>";
+module.exports = "<transition name=lightbox--animation-> <section class=lightbox @click.self=\"$emit('close')\"> <figure class=lightbox__container> <button class=lightbox__close @click=\"$emit('close')\"></button> <slot name=lightbox__container>Содержимое лайтбокса</slot> </figure> </section> </transition>";
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=navigation> <div class=navigation__content-wrap> <a href=/ class=navigation__logo></a> <nav class=navigation__menu> <a href=# class=navigation__menu-item>О нас</a> <a href=# class=navigation__menu-item>аутсорсинг</a> <a href=# class=navigation__menu-item>портфолио</a> <a href=# class=navigation__menu-item>контакты</a> </nav> </div> </section>";
+module.exports = "<section class=linking> <button class=linking__button @click=\"showModal=!showModal; changeScroll();\"></button> <transition name=linking--animation-> <figure class=linking__modal v-show=showModal> <div class=linking__modal-content-wrap> <header class=linking__modal-header> <div class=linking__modal-header-col></div> <div class=linking__modal-header-col> <a href=\"\" class=linking__modal-logo></a> </div> <div class=linking__modal-header-col> <a href=tel:+74959899857 class=linking__modal__phone>+7 (495) 989-98-57</a> </div> </header> <p class=linking__modal-title>оказываем услуги:</p> <div class=linking__modal-items-wrap> <a href=\"\" class=\"linking__modal-item linking__modal-item--1\">Разработка landing page</a> <a href=\"\" class=\"linking__modal-item linking__modal-item--2\">Верстка дизайн-макетов</a> <a href=\"\" class=\"linking__modal-item linking__modal-item--3\"> Поддержка сайтов <br>на 1С-Битрикс</a> </div> <footer class=linking__modal-footer>Севастополь [[ year ]]</footer> </div> </figure> </transition> </section>";
 
 /***/ }),
 /* 13 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=projects> <div class=projects__content-wrap> <header class=projects__title>Оцените качество нашей верстки по проектам наших клиентов</header> <section class=projects__gallery> <nav class=projects__gallery-nav> <button class=\"projects__gallery-nav-item projects__gallery-nav-item--active\" data-filter=*>Все проекты</button> <button class=projects__gallery-nav-item data-filter=[data-shop]>интернет-магазины</button> <button class=projects__gallery-nav-item data-filter=[data-landing]>лендинги</button> <button class=projects__gallery-nav-item data-filter=[data-special]>спец. проекты</button> </nav> <div class=projects__gallery-items-wrap> <projects-gallery-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\" data-special></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann data-shop></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\" data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\" data-special></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann data-shop></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\" data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\" data-special></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann data-shop></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\" data-landing></projects-gallery-item> </div> </section> </div> </section>";
+module.exports = "<div class=map-widget id=map-widget> <slot></slot> </div>";
 
 /***/ }),
 /* 14 */
 /***/ (function(module, exports) {
 
-module.exports = "<a :href=link class=projects__gallery-item data-transition-off> <img :src=image :alt=title class=projects__gallery-item-image data-adaptive-background> <p class=projects__gallery-item-suptitle>[[ suptitle ]]</p> <p class=projects__gallery-item-title>[[ title ]]</p> </a>";
+module.exports = "<section class=navigation> <div class=navigation__content-wrap> <a href=/ class=navigation__logo></a> <nav class=navigation__menu> <a href=/pages/2.about-us.html class=navigation__menu-item>О нас</a> <a href=/pages/3.outsource.html class=navigation__menu-item>аутсорсинг</a> <a href=/pages/4.projects.html class=navigation__menu-item>портфолио</a> <a href=/pages/5.contacts.html class=navigation__menu-item>контакты</a> <a href=/pages/6.order.html class=navigation__menu-order>заказать верстку</a> </nav> </div> </section>";
 
 /***/ }),
 /* 15 */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=promo> <div class=promo__content-wrap> <div class=promo__container> <div class=promo__content> <h1 class=promo__title>Качественная и&nbsp;быстрая верстка ваших дизайн-макетов</h1> <p class=promo__subtitle>Превратим ваши psd/sketch макеты в структурированный набор html/css файлов. Сохраним pixel-perfect, прикрутим анимацию.</p> <div class=promo__items-wrap> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--1\"></div> <figcaption class=promo__item-caption>sketch</figcaption> </figure> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--2\"></div> <figcaption class=promo__item-caption>photoshop</figcaption> </figure> </div> <button type=button class=promo__order>заказать верстку</button> <a href=#quality class=promo__readmore>смотреть примеры работ</a> </div> <div class=promo__image-wrap> <img src=/assets/images/promo-2.jpg alt=\"\" class=\"promo__image promo__image--1 wow promoImage\"> <img src=/assets/images/promo-3.jpg alt=\"\" class=\"promo__image promo__image--2 wow promoImage\"> </div> </div> </div> </header>";
+module.exports = "<section class=order> <div class=order__content-wrap> <header class=order__title>Оформление заявки на верстку</header> <p class=order__subtitle>Обратите внимание, что после получения заказа мы свяжемся с вами для уточнения нюансов. Пожалуйста, учитывайте, что для согласования всех условий заказа, а также расчёта стоимости и сроков выполнения проекта потребуется некоторое время.</p> <form-upload></form-upload> </div> </section>";
 
 /***/ }),
 /* 16 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=quality id=quality> <div class=quality__content-wrap> <header class=quality__title>Качество нашей верстки говорит за себя</header> <p class=quality__subtitle>Стабильность исполнения на высоком уровне позволяет нашим постоянным клиентам всегда быть уверенными в результате</p> <div class=quality__items-wrap> <quality-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\"></quality-item> <quality-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva></quality-item> <quality-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann></quality-item> <quality-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\"></quality-item> <button class=quality__readmore v-show=!readmore @click=\"readmore = true\">полный список работ</button> <transition enter-active-class=\"animated fadeIn\" leave-active-class=\"animated fadeOut\"> <section class=quality__readmore-items-wrap v-show=readmore> <quality-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva></quality-item> <quality-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann></quality-item> <quality-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\"></quality-item> <quality-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\"></quality-item> </section> </transition> </div> </div> </section>";
+module.exports = "<section class=projects> <div class=projects__content-wrap> <header class=projects__title>Оцените качество нашей верстки по проектам наших клиентов</header> <section class=projects__gallery> <nav class=projects__gallery-nav> <button class=\"projects__gallery-nav-item projects__gallery-nav-item--active\" data-filter=*>Все проекты</button> <button class=projects__gallery-nav-item data-filter=[data-shop]>интернет-магазины</button> <button class=projects__gallery-nav-item data-filter=[data-landing]>лендинги</button> <button class=projects__gallery-nav-item data-filter=[data-special]>спец. проекты</button> </nav> <div class=projects__gallery-items-wrap> <projects-gallery-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\" data-special></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann data-shop></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\" data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\" data-special></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann data-shop></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\" data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\" data-special></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva data-landing></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann data-shop></projects-gallery-item> <projects-gallery-item link=# image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\" data-landing></projects-gallery-item> </div> </section> </div> </section>";
 
 /***/ }),
 /* 17 */
 /***/ (function(module, exports) {
 
-module.exports = "<a :href=link class=quality__item> <img :src=image :alt=title class=quality__item-image data-adaptive-background> <p class=quality__item-suptitle>[[ suptitle ]]</p> <p class=quality__item-title>[[ title ]]</p> </a>";
+module.exports = "<a :href=link class=projects__gallery-item data-transition-off> <img :src=image :alt=title class=projects__gallery-item-image data-adaptive-background> <p class=projects__gallery-item-suptitle>[[ suptitle ]]</p> <p class=projects__gallery-item-title>[[ title ]]</p> </a>";
 
 /***/ }),
 /* 18 */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=site-footer> <div class=site-footer__content-wrap> <div class=site-footer__form-question-wrap> <form-question></form-question> </div> <div class=site-footer__faq-wrap> <faq></faq> </div> </div> <hr class=site-footer__hr> <div class=site-footer__content-wrap> <a href=mailto:hello.krown.cc class=site-footer__email>HELLO@KROWN.CC</a> <span class=site-footer__city>Севастополь</span> <a href=tel:+74959899857 class=site-footer__phone>+7 (495) 989-98-57</a> </div> </footer>";
+module.exports = "<header class=promo> <div class=promo__content-wrap> <div class=promo__container> <div class=promo__content> <h1 class=promo__title>Качественная и&nbsp;быстрая верстка ваших дизайн-макетов</h1> <p class=promo__subtitle>Превратим ваши psd/sketch макеты в структурированный набор html/css файлов. Сохраним pixel-perfect, прикрутим анимацию.</p> <div class=promo__items-wrap> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--1\"></div> <figcaption class=promo__item-caption>sketch</figcaption> </figure> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--2\"></div> <figcaption class=promo__item-caption>photoshop</figcaption> </figure> </div> <a href=/pages/6.order.html class=promo__order>заказать верстку</a> <a href=#quality class=promo__readmore>смотреть примеры работ</a> </div> <div class=promo__image-wrap> <img src=/assets/images/promo-2.jpg alt=\"\" class=\"promo__image promo__image--1 wow promoImage\"> <img src=/assets/images/promo-3.jpg alt=\"\" class=\"promo__image promo__image--2 wow promoImage\"> </div> </div> </div> </header>";
 
 /***/ }),
 /* 19 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=special> <div class=special__content-wrap> <article class=special__content> <header class=special__title>Специальное предложение для студий и агентств</header> <p class=special__subtitle>Мы открыты для сотрудничества, и предлагаем агентствам и студиям выгодные условия по аутсорсингу. Условия работы обсуждаются индивидуально, по всем вопросам обращайтесь:</p> <a href=mailto: class=special__mail>outsource@krown.cc</a> <a href=tel: class=special__phone>+7 (495) 989-98-57</a> </article> <aside class=special__sidebar> <p class=special__sidebar-title>почасовая тарификация</p> <p class=special__cost data-from=от data-to=\"за час\">800 р.</p> </aside> </div> </section>";
+module.exports = "<section class=quality id=quality> <div class=quality__content-wrap> <header class=quality__title>Качество нашей верстки говорит за себя</header> <p class=quality__subtitle>Стабильность исполнения на высоком уровне позволяет нашим постоянным клиентам всегда быть уверенными в результате</p> <div class=quality__items-wrap> <quality-item link=https://coolors.co/899e8b-99c5b5-afece7-81f499-666b6a image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\"></quality-item> <quality-item link=http://bugmenot.com/ image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva></quality-item> <quality-item link=https://habrastorage.org/ image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann></quality-item> <quality-item link=https://coolors.co/899e8b-99c5b5-afece7-81f499-666b6a image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\"></quality-item> <button class=quality__readmore v-show=!readmore @click=\"readmore = true\">полный список работ</button> <transition enter-active-class=\"animated fadeIn\" leave-active-class=\"animated fadeOut\"> <section class=quality__readmore-items-wrap v-show=readmore> <quality-item link=http://landing.dev.krown.cc/pages/1.home.html image=/assets/images/quality-1.jpg suptitle=Интернет-магазин title=\"Gold Dragon Profit\"></quality-item> <quality-item link=http://content.dev.krown.cc/pages/1.home.html image=/assets/images/quality-2.jpg suptitle=\"Landing page\" title=Stropuva></quality-item> <quality-item link=http://krimgrad.dev.krown.cc/pages/1.home.html image=/assets/images/quality-3.jpg suptitle=Интернет-магазин title=Viessmann></quality-item> <quality-item link=http://krimgrad.dev.krown.cc/pages/9.filter.html image=/assets/images/quality-4.jpg suptitle=\"Landing page\" title=\"Москлимат: Кондиционирование\"></quality-item> </section> </transition> </div> </div> </section>";
 
 /***/ }),
 /* 20 */
+/***/ (function(module, exports) {
+
+module.exports = "<figure class=quality__item> <div class=quality__item-content-wrap @click=\"showWorkFrame = true; changeScroll();\"> <img :src=image :alt=title class=quality__item-image data-adaptive-background> <p class=quality__item-suptitle>[[ suptitle ]]</p> <p class=quality__item-title>[[ title ]]</p> </div> <work-frame v-if=showWorkFrame @close=\"showWorkFrame = false; changeScroll();\" :href=link :type=suptitle :name=title></work-frame> </figure>";
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+module.exports = "<footer class=site-footer> <div class=site-footer__content-wrap> <div class=site-footer__form-question-wrap> <form-question></form-question> </div> <div class=site-footer__faq-wrap> <faq></faq> </div> </div> <hr class=site-footer__hr> <div class=site-footer__content-wrap> <a href=mailto:hello.krown.cc class=site-footer__email>HELLO@KROWN.CC</a> <span class=site-footer__city>Севастополь</span> <a href=tel:+74959899857 class=site-footer__phone>+7 (495) 989-98-57</a> </div> </footer>";
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=special> <div class=special__content-wrap> <article class=special__content> <header class=special__title>Специальное предложение для студий и агентств</header> <p class=special__subtitle>Мы открыты для сотрудничества, и предлагаем агентствам и студиям выгодные условия по аутсорсингу. Условия работы обсуждаются индивидуально, по всем вопросам обращайтесь:</p> <a href=mailto: class=special__mail>outsource@krown.cc</a> <a href=tel: class=special__phone>+7 (495) 989-98-57</a> </article> <aside class=special__sidebar> <p class=special__sidebar-title>почасовая тарификация</p> <p class=special__cost data-from=от data-to=\"за час\">800 р.</p> </aside> </div> </section>";
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
+module.exports = "<transition name=work-frame--animation-> <section class=work-frame> <header class=work-frame__header> <nav class=work-frame__content-wrap> <button class=work-frame__back type=button @click.self=\"$emit('close');\">Назад к списку работ</button> <span class=work-frame__info>Проект: [[ type ]] [[ name ]]</span> </nav> </header> <iframe class=work-frame__iframe :src=href></iframe> </section> </transition> ";
+
+/***/ }),
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -276,7 +300,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // если есть поля с ошибками то сообщаем об этом пользователю
         if ($f.find('[data-form-field-invalid]').length) {
-            $s.html(status[0]).slideDown(500);
+            $f.find(':not([data-form-field-invalid]) + [data-form-status]').slideUp(500);
+            $f.find('[data-form-field-invalid] + [data-form-status]').slideDown(500);
             return false;
         }
 
@@ -412,9 +437,120 @@ Vue.component('faq', {
         });
     }
 });
-Vue.component('form-order', {
+Vue.component('file-upload', {
     delimiters: ['[[', ']]'],
     template: __webpack_require__(6),
+    data: function data() {
+        return {
+            showCancelAllButton: false,
+            showItemsTitle: false
+        };
+    },
+
+    mounted: function mounted() {
+
+        var vm = this;
+
+        //file upload
+        $(".upload").upload({
+            maxSize: 1073741824,
+            beforeSend: onBeforeSend,
+            label: ''
+        }).on("start.upload", onStart).on("complete.upload", onComplete).on("filestart.upload", onFileStart).on("fileprogress.upload", onFileProgress).on("filecomplete.upload", onFileComplete).on("fileerror.upload", onFileError).on("chunkstart.upload", onChunkStart).on("chunkprogress.upload", onChunkProgress).on("chunkcomplete.upload", onChunkComplete).on("chunkerror.upload", onChunkError).on("queued.upload", onQueued);
+        $(".file-upload__list--progress").on("click", ".cancel", onCancel);
+        $(".cancel_all").on("click", onCancelAll);
+
+        function onCancel(e) {
+            console.log("Cancel");
+            var index = $(this).parents("li").data("index");
+            $(this).parents("form").find(".upload").upload("abort", parseInt(index, 10));
+        }
+
+        function onCancelAll(e) {
+            console.log("Cancel All");
+            $(this).parents("form").find(".upload").upload("abort");
+            $(this).parents("form").find(".file-upload__list--done").html("");
+            $(this).parents("form").find(".file-upload__list--progress").html("");
+        }
+
+        function onBeforeSend(formData, file) {
+            console.log("Before Send");
+            formData.append("test_field", "test_value");
+            // return (file.name.indexOf(".jpg") < -1) ? false : formData; // cancel all jpgs
+            return formData;
+        }
+
+        function onQueued(e, files) {
+            console.log("Queued");
+            var html = '';
+            for (var i = 0; i < files.length; i++) {
+                html += '<li data-file="' + files[i].name + '" data-index="' + files[i].index + '"><span class="content"><span class="file">' + files[i].name + '</span><span class="cancel">Отмена</span><span class="progress">Queued</span></span><span class="file-upload__bar"></span></li>';
+            }
+            $(this).parents("form").find(".file-upload__list--progress").append(html);
+        }
+
+        function onStart(e, files) {
+            console.log("Start");
+            vm.showItemsTitle = true;
+            vm.$emit('recalc-tab-heigth');
+            $(this).parents("form").find(".file-upload__list--progress").find("li").find(".progress").text("Waiting");
+        }
+
+        function onComplete(e) {
+            console.log("Загрузка файлов завершена.");
+            // All done!
+        }
+
+        function onFileStart(e, file) {
+            console.log("File Start");
+            $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]").find(".progress").text("0%");
+        }
+
+        function onFileProgress(e, file, percent) {
+            console.log("File Progress");
+            var $file = $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]");
+            $file.find(".progress").text(percent + "%");
+            $file.find(".file-upload__bar").css("width", percent + "%");
+        }
+
+        function onFileComplete(e, file, response) {
+            console.log("File Complete");
+            if (response.trim() === "" || response.toLowerCase().indexOf("error") > -1) {
+                $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]").addClass("error").find(".progress").text(response.trim());
+            } else {
+                var $target = $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]");
+                $target.find(".file").text(file.name);
+                $target.find(".progress").remove();
+                $target.find(".cancel").remove();
+                $target.appendTo($(this).parents("form").find(".file-upload__list--done"));
+            }
+        }
+
+        function onFileError(e, file, error) {
+            console.log("File Error");
+            $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]").addClass("error").find(".progress").text("Error: " + error);
+        }
+
+        function onChunkStart(e, file) {
+            console.log("Chunk Start");
+        }
+
+        function onChunkProgress(e, file, percent) {
+            console.log("Chunk Progress");
+        }
+
+        function onChunkComplete(e, file, response) {
+            console.log("Chunk Complete");
+        }
+
+        function onChunkError(e, file, error) {
+            console.log("Chunk Error");
+        }
+    }
+});
+Vue.component('form-order', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(7),
     props: ['plan', 'planDescription', 'cost'],
     computed: {
         location: function (_location) {
@@ -434,7 +570,7 @@ Vue.component('form-order', {
 });
 Vue.component('form-question', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(7),
+    template: __webpack_require__(8),
     computed: {
         location: function (_location2) {
             function location() {
@@ -451,17 +587,62 @@ Vue.component('form-question', {
         })
     }
 });
+Vue.component('form-upload', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(9),
+    methods: {
+        //фикс начальной высоты табов
+        heightFix: function heightFix() {
+            setTimeout(function () {
+                $(".form-upload .js-tabs-height").height($(".form-upload__tab.active").outerHeight());
+                console.info('Перерасчитана высота активного таба');
+            }, 0);
+        }
+    },
+    mounted: function mounted() {
+        var vm = this;
+        $('.form-upload').tabtab({
+            tabMenu: '.form-upload__nav', // direct container of the tab menu items
+            tabContent: '.form-upload__tabs-wrap', // direct container of the tab content items
+
+            startSlide: 1, // starting slide on pageload
+            arrows: true, // keyboard arrow navigation
+            // dynamicHeight: false, // if true the height will dynamic and animated.
+            fixedHeight: false, // if true the height will dynamic and animated.
+            useAnimations: true, // disables animations.
+
+            easing: 'ease', // http://julian.com/research/velocity/#easing
+            speed: 1000, // animation speed
+            slideDelay: 0, // delay the animation
+            perspective: 1200, // set 3D perspective
+            transformOrigin: 'center top', // set the center point of the 3d animation
+            perspectiveOrigin: '50% 50%', // camera angle
+
+            translateY: 0, // animate along the Y axis (val: px or ‘slide’)
+            translateX: 30, // animate along the X axis (val: px or ‘slide’)
+            scale: 1, // animate scale (val: 0-2)
+            rotateX: 0, // animate rotation (val: 0deg-360deg)
+            rotateY: 0, // animate Y acces rotation (val: 0deg-360deg)
+            skewY: 0, // animate Y skew (val: 0deg-360deg)
+            skewX: 0 });
+
+        vm.heightFix();
+        $(window).resize(function () {
+            vm.heightFix();
+        });
+    }
+});
 Vue.component('keys', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(8)
+    template: __webpack_require__(10)
 });
 Vue.component('lightbox', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(9)
+    template: __webpack_require__(11)
 });
 Vue.component('linking', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(10),
+    template: __webpack_require__(12),
     data: function data() {
         return {
             showModal: false
@@ -492,7 +673,7 @@ Vue.component('linking', {
 });
 Vue.component('map-widget', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(11),
+    template: __webpack_require__(13),
     props: ['address'],
     mounted: function mounted() {
 
@@ -524,56 +705,13 @@ Vue.component('map-widget', {
 });
 Vue.component('navigation', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(12)
+    template: __webpack_require__(14)
 });
-Vue.component('projects-gallery-item', {
-    delimiters: ['[[', ']]'],
-    template: __webpack_require__(14),
-    props: ['link', 'image', 'suptitle', 'title'],
-    mounted: function mounted() {
-        $.adaptiveBackground.run({
-            selector: '[data-adaptive-background]',
-            parent: null,
-            exclude: ['rgb(0,0,0)', 'rgba(255,255,255)'],
-            normalizeTextColor: true,
-            normalizedTextColors: {
-                light: "#fff",
-                dark: "#333"
-            },
-            lumaClasses: {
-                light: "ab-light",
-                dark: "ab-dark"
-            }
-        });
-    }
-});
-
-Vue.component('projects', {
-    delimiters: ['[[', ']]'],
-    template: __webpack_require__(13),
-    mounted: function mounted() {
-
-        var $grid = $('.projects__gallery-items-wrap').isotope({
-            itemSelector: '.projects__gallery-item'
-        });
-        $('.projects__gallery-nav').on('click', 'button', function () {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: filterValue
-            });
-        });
-
-        $('.projects__gallery-nav-item').click(function () {
-            $('.projects__gallery-nav-item--active').removeClass('projects__gallery-nav-item--active');
-            $(this).addClass('projects__gallery-nav-item--active');
-        });
-    }
-});
-Vue.component('promo', {
+Vue.component('order', {
     delimiters: ['[[', ']]'],
     template: __webpack_require__(15)
 });
-Vue.component('quality-item', {
+Vue.component('projects-gallery-item', {
     delimiters: ['[[', ']]'],
     template: __webpack_require__(17),
     props: ['link', 'image', 'suptitle', 'title'],
@@ -595,9 +733,80 @@ Vue.component('quality-item', {
     }
 });
 
-Vue.component('quality', {
+Vue.component('projects', {
     delimiters: ['[[', ']]'],
     template: __webpack_require__(16),
+    mounted: function mounted() {
+
+        var $grid = $('.projects__gallery-items-wrap').isotope({
+            itemSelector: '.projects__gallery-item'
+        });
+        $('.projects__gallery-nav').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
+
+        $('.projects__gallery-nav-item').click(function () {
+            $('.projects__gallery-nav-item--active').removeClass('projects__gallery-nav-item--active');
+            $(this).addClass('projects__gallery-nav-item--active');
+        });
+    }
+});
+Vue.component('promo', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(18)
+});
+Vue.component('quality-item', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(20),
+    data: function data() {
+        return {
+            showWorkFrame: false
+        };
+    },
+
+    props: ['link', 'image', 'suptitle', 'title'],
+    methods: {
+        changeScroll: function changeScroll() {
+            if (this.showWorkFrame === true) {
+                $('html').attr('data-lock-scroll', '').css({
+                    'paddingRight': '15px'
+                });
+            } else {
+                setTimeout(function () {
+                    $('html').removeAttr('data-lock-scroll').css({
+                        'paddingRight': '0px'
+                    });
+                }, 500);
+            }
+        }
+    },
+    mounted: function mounted() {
+
+        var vm = this;
+
+        $.adaptiveBackground.run({
+            selector: '[data-adaptive-background]',
+            parent: null,
+            exclude: ['rgb(0,0,0)', 'rgba(255,255,255)'],
+            normalizeTextColor: true,
+            normalizedTextColors: {
+                light: "#fff",
+                dark: "#333"
+            },
+            lumaClasses: {
+                light: "ab-light",
+                dark: "ab-dark"
+            }
+        });
+    }
+});
+
+Vue.component('quality', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(19),
     data: function data() {
         return {
             readmore: false
@@ -606,7 +815,7 @@ Vue.component('quality', {
 });
 Vue.component('site-footer', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(18),
+    template: __webpack_require__(21),
     computed: {
         location: function (_location3) {
             function location() {
@@ -625,7 +834,12 @@ Vue.component('site-footer', {
 });
 Vue.component('special', {
     delimiters: ['[[', ']]'],
-    template: __webpack_require__(19)
+    template: __webpack_require__(22)
+});
+Vue.component('work-frame', {
+    delimiters: ['[[', ']]'],
+    template: __webpack_require__(23),
+    props: ['href', 'type', 'name']
 });
 var App = new Vue({
     delimiters: ['[[', ']]'],
@@ -648,7 +862,7 @@ var App = new Vue({
     methods: {
         pixlayout: function pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-contacts--960.png",
+                src: "/assets/images/theme-order--960.png",
                 show: false,
                 top: 0,
                 left: 282,

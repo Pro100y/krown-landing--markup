@@ -7,9 +7,9 @@
 
 .promo__content-wrap {
     margin: 0 auto;
+    padding-top: 68px;
     max-width: 940px;
     width: 100%;
-    padding-top: 68px;
 }
 
 .promo__container {
@@ -81,6 +81,7 @@
 }
 
 .promo__order {
+    display: inline-block;
     margin-bottom: 15px;
     padding: 0 46px 0 85px;
     border-radius: 58px;

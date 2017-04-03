@@ -84,7 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // если есть поля с ошибками то сообщаем об этом пользователю
         if ($f.find('[data-form-field-invalid]').length) {
-            $s.html(status[0]).slideDown(500);
+            $f.find(':not([data-form-field-invalid]) + [data-form-status]').slideUp(500);
+            $f.find('[data-form-field-invalid] + [data-form-status]').slideDown(500);
             return false;
         }
 
@@ -220,6 +221,117 @@ Vue.component('faq', {
         });
     }
 });
+Vue.component('file-upload', {
+    delimiters: ['[[', ']]'],
+    template: require('./file-upload/file-upload.htm'),
+    data: function data() {
+        return {
+            showCancelAllButton: false,
+            showItemsTitle: false
+        };
+    },
+
+    mounted: function mounted() {
+
+        var vm = this;
+
+        //file upload
+        $(".upload").upload({
+            maxSize: 1073741824,
+            beforeSend: onBeforeSend,
+            label: ''
+        }).on("start.upload", onStart).on("complete.upload", onComplete).on("filestart.upload", onFileStart).on("fileprogress.upload", onFileProgress).on("filecomplete.upload", onFileComplete).on("fileerror.upload", onFileError).on("chunkstart.upload", onChunkStart).on("chunkprogress.upload", onChunkProgress).on("chunkcomplete.upload", onChunkComplete).on("chunkerror.upload", onChunkError).on("queued.upload", onQueued);
+        $(".file-upload__list--progress").on("click", ".cancel", onCancel);
+        $(".cancel_all").on("click", onCancelAll);
+
+        function onCancel(e) {
+            console.log("Cancel");
+            var index = $(this).parents("li").data("index");
+            $(this).parents("form").find(".upload").upload("abort", parseInt(index, 10));
+        }
+
+        function onCancelAll(e) {
+            console.log("Cancel All");
+            $(this).parents("form").find(".upload").upload("abort");
+            $(this).parents("form").find(".file-upload__list--done").html("");
+            $(this).parents("form").find(".file-upload__list--progress").html("");
+        }
+
+        function onBeforeSend(formData, file) {
+            console.log("Before Send");
+            formData.append("test_field", "test_value");
+            // return (file.name.indexOf(".jpg") < -1) ? false : formData; // cancel all jpgs
+            return formData;
+        }
+
+        function onQueued(e, files) {
+            console.log("Queued");
+            var html = '';
+            for (var i = 0; i < files.length; i++) {
+                html += '<li data-file="' + files[i].name + '" data-index="' + files[i].index + '"><span class="content"><span class="file">' + files[i].name + '</span><span class="cancel">Отмена</span><span class="progress">Queued</span></span><span class="file-upload__bar"></span></li>';
+            }
+            $(this).parents("form").find(".file-upload__list--progress").append(html);
+        }
+
+        function onStart(e, files) {
+            console.log("Start");
+            vm.showItemsTitle = true;
+            vm.$emit('recalc-tab-heigth');
+            $(this).parents("form").find(".file-upload__list--progress").find("li").find(".progress").text("Waiting");
+        }
+
+        function onComplete(e) {
+            console.log("Загрузка файлов завершена.");
+            // All done!
+        }
+
+        function onFileStart(e, file) {
+            console.log("File Start");
+            $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]").find(".progress").text("0%");
+        }
+
+        function onFileProgress(e, file, percent) {
+            console.log("File Progress");
+            var $file = $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]");
+            $file.find(".progress").text(percent + "%");
+            $file.find(".file-upload__bar").css("width", percent + "%");
+        }
+
+        function onFileComplete(e, file, response) {
+            console.log("File Complete");
+            if (response.trim() === "" || response.toLowerCase().indexOf("error") > -1) {
+                $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]").addClass("error").find(".progress").text(response.trim());
+            } else {
+                var $target = $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]");
+                $target.find(".file").text(file.name);
+                $target.find(".progress").remove();
+                $target.find(".cancel").remove();
+                $target.appendTo($(this).parents("form").find(".file-upload__list--done"));
+            }
+        }
+
+        function onFileError(e, file, error) {
+            console.log("File Error");
+            $(this).parents("form").find(".file-upload__list--progress").find("li[data-index=" + file.index + "]").addClass("error").find(".progress").text("Error: " + error);
+        }
+
+        function onChunkStart(e, file) {
+            console.log("Chunk Start");
+        }
+
+        function onChunkProgress(e, file, percent) {
+            console.log("Chunk Progress");
+        }
+
+        function onChunkComplete(e, file, response) {
+            console.log("Chunk Complete");
+        }
+
+        function onChunkError(e, file, error) {
+            console.log("Chunk Error");
+        }
+    }
+});
 Vue.component('form-order', {
     delimiters: ['[[', ']]'],
     template: require('./form-order/form-order.htm'),
@@ -257,6 +369,51 @@ Vue.component('form-question', {
         }(function () {
             return location.href;
         })
+    }
+});
+Vue.component('form-upload', {
+    delimiters: ['[[', ']]'],
+    template: require('./form-upload/form-upload.htm'),
+    methods: {
+        //фикс начальной высоты табов
+        heightFix: function heightFix() {
+            setTimeout(function () {
+                $(".form-upload .js-tabs-height").height($(".form-upload__tab.active").outerHeight());
+                console.info('Перерасчитана высота активного таба');
+            }, 0);
+        }
+    },
+    mounted: function mounted() {
+        var vm = this;
+        $('.form-upload').tabtab({
+            tabMenu: '.form-upload__nav', // direct container of the tab menu items
+            tabContent: '.form-upload__tabs-wrap', // direct container of the tab content items
+
+            startSlide: 1, // starting slide on pageload
+            arrows: true, // keyboard arrow navigation
+            // dynamicHeight: false, // if true the height will dynamic and animated.
+            fixedHeight: false, // if true the height will dynamic and animated.
+            useAnimations: true, // disables animations.
+
+            easing: 'ease', // http://julian.com/research/velocity/#easing
+            speed: 1000, // animation speed
+            slideDelay: 0, // delay the animation
+            perspective: 1200, // set 3D perspective
+            transformOrigin: 'center top', // set the center point of the 3d animation
+            perspectiveOrigin: '50% 50%', // camera angle
+
+            translateY: 0, // animate along the Y axis (val: px or ‘slide’)
+            translateX: 30, // animate along the X axis (val: px or ‘slide’)
+            scale: 1, // animate scale (val: 0-2)
+            rotateX: 0, // animate rotation (val: 0deg-360deg)
+            rotateY: 0, // animate Y acces rotation (val: 0deg-360deg)
+            skewY: 0, // animate Y skew (val: 0deg-360deg)
+            skewX: 0 });
+
+        vm.heightFix();
+        $(window).resize(function () {
+            vm.heightFix();
+        });
     }
 });
 Vue.component('keys', {
@@ -334,6 +491,10 @@ Vue.component('navigation', {
     delimiters: ['[[', ']]'],
     template: require('./navigation/navigation.htm')
 });
+Vue.component('order', {
+    delimiters: ['[[', ']]'],
+    template: require('./order/order.htm')
+});
 Vue.component('projects-gallery-item', {
     delimiters: ['[[', ']]'],
     template: require('./projects/projects__gallery-item.htm'),
@@ -384,8 +545,32 @@ Vue.component('promo', {
 Vue.component('quality-item', {
     delimiters: ['[[', ']]'],
     template: require('./quality/quality__item.htm'),
+    data: function data() {
+        return {
+            showWorkFrame: false
+        };
+    },
+
     props: ['link', 'image', 'suptitle', 'title'],
+    methods: {
+        changeScroll: function changeScroll() {
+            if (this.showWorkFrame === true) {
+                $('html').attr('data-lock-scroll', '').css({
+                    'paddingRight': '15px'
+                });
+            } else {
+                setTimeout(function () {
+                    $('html').removeAttr('data-lock-scroll').css({
+                        'paddingRight': '0px'
+                    });
+                }, 500);
+            }
+        }
+    },
     mounted: function mounted() {
+
+        var vm = this;
+
         $.adaptiveBackground.run({
             selector: '[data-adaptive-background]',
             parent: null,
@@ -435,6 +620,11 @@ Vue.component('special', {
     delimiters: ['[[', ']]'],
     template: require('./special/special.htm')
 });
+Vue.component('work-frame', {
+    delimiters: ['[[', ']]'],
+    template: require('./work-frame/work-frame.htm'),
+    props: ['href', 'type', 'name']
+});
 var App = new Vue({
     delimiters: ['[[', ']]'],
     el: '#app',
@@ -456,7 +646,7 @@ var App = new Vue({
     methods: {
         pixlayout: function pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-contacts--960.png",
+                src: "/assets/images/theme-order--960.png",
                 show: false,
                 top: 0,
                 left: 282,
