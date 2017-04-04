@@ -1,11 +1,11 @@
-<figure  class  = "quality__item">
+<figure class = "quality__item">
     <div
         class="quality__item-content-wrap"
         @click = "showWorkFrame = true; changeScroll();"
     >
         <img
-            :src   = "image"
-            :alt   = "title"
+            :src  = "image"
+            :alt  = "title"
             class = "quality__item-image"
             data-adaptive-background
         >
@@ -14,11 +14,11 @@
     </div>
 
     <work-frame
-        v-if="showWorkFrame"
-        @close="showWorkFrame = false; changeScroll();"
-        :href="link"
-        :type="suptitle"
-        :name="title"
+        v-if   = "showWorkFrame"
+        @close = "showWorkFrame = false; changeScroll();"
+        :href  = "link"
+        :type  = "suptitle"
+        :name  = "title"
     ></work-frame>
 
 </figure>

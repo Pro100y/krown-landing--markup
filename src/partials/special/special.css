@@ -12,10 +12,17 @@
     padding: 93px 0 100px;
     max-width: 940px;
     width: 100%;
+    @media screen and (--mobile) {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
 }
 
 .special__content {
     width: calc((100% - var(--gridGutter))/12*7);
+    @media screen and (--mobile) {
+        width: 100%;
+    }
 }
 
 .special__title {
@@ -27,6 +34,12 @@
     font-weight: 300;
     font-size: 48px;
     line-height: 1.17;
+    @media screen and (--mobile) {
+        font-size: 30px;
+        line-height: 1.27;
+        background-size: 195px 10px;
+        background-position: 5px 62px;
+    }
 }
 
 .special__subtitle {
@@ -51,6 +64,12 @@
     &:hover {
         color: #0078ff;
     }
+    @media screen and (--mobile) {
+        font-size: 28px;
+        line-height: 1.14;
+        background-size: 273px 16px;
+        margin-bottom: 11px;
+    }
 }
 
 .special__phone {
@@ -62,6 +81,10 @@
     &:hover {
         color: #0078ff;
     }
+    @media screen and (--mobile) {
+        font-size: 20px;
+        line-height: 1.5;
+    }
 }
 
 .special__sidebar {
@@ -69,6 +92,19 @@
     width: calc((100% - var(--gridGutter))/12*5);
     background-color: #0078ff;
     align-self: flex-start;
+    @media screen and (--mobile) {
+        display: none;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    &--mobile {
+        display: none;
+        @media screen and (--mobile) {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .special__sidebar-title {
@@ -77,6 +113,9 @@
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 67px;
+    @media screen and (--mobile) {
+        margin-bottom: 60px;
+    }
 }
 
 .special__cost {

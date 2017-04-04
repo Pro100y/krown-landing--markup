@@ -4,6 +4,11 @@
     position: relative;
     height: 770px;
     padding-top: 92px;
+    @media screen and (--mobile) {
+        padding-top: 20px;
+        margin-top: -10px;
+        height: 551px;
+    }
 }
 
 .contacts__content-wrap {
@@ -20,6 +25,9 @@
     left: 0;
     top: 0;
     background-color: #ffffff;
+    @media screen and (--mobile) {
+        width: 100%;
+    }
 }
 
 .contacts__title {
@@ -33,6 +41,9 @@
     font-size: 18px;
     line-height: 1.33;
     margin-bottom: 30px;
+    @media screen and (--mobile) {
+        margin-bottom: 35px;
+    }
 }
 
 .contacts__mail {
@@ -48,6 +59,12 @@
     margin-bottom: 22px;
     &:hover {
         color: #0078ff;
+    }
+    @media screen and (--mobile) {
+        font-size: 28px;
+        line-height: 1.29;
+        background-size: 238px 16px;
+        margin-bottom: 10px;
     }
 }
 

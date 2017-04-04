@@ -58,7 +58,27 @@ Vue.component('quality', {
     template: require('./quality/quality.htm'),
     data() {
         return {
-            readmore: false
+            readmore: false,
+            device: ''
         }
+    },
+    methods: {
+        detectDevice() {
+            if ($(window).width() >= 960) {
+                return 'laptop';
+            } else {
+                return 'mobile';
+            }
+        }
+    },
+    mounted: function () {
+
+        var vm = this;
+
+        vm.device = vm.detectDevice();
+
+        window.addEventListener('resize', function () {
+            vm.device = vm.detectDevice();
+        });
     }
 });

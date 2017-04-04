@@ -12,16 +12,28 @@
     padding: 20px 0 100px;
     max-width: 940px;
     width: 100%;
+    @media screen and (--mobile) {
+        padding-bottom: 20px;
+    }
 }
 
 .experience__content {
     width: calc((100% - var(--gridGutter))/12*8);
+    @media screen and (--mobile) {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }
 
 .experience__title {
     margin-bottom: 46px;
     font-size: 36px;
     line-height: 1.17;
+    @media screen and (--mobile) {
+        font-size: 24px;
+        line-height: 1.25;
+        margin-bottom: 32px;
+    }
 }
 
 .experience__subtitle {
@@ -30,6 +42,9 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 12px;
+    @media screen and (--mobile) {
+        margin-bottom: 21px;
+    }
 }
 
 .experience__paragraph {
@@ -38,6 +53,13 @@
     line-height: 1.5;
     &:not(:last-child) {
         margin-bottom: 40px;
+        @media screen and (--mobile) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (--mobile) {
+        font-size: 18px;
+        line-height: 1.67;
     }
 }
 
@@ -50,6 +72,11 @@
     width: calc((100% - var(--gridGutter))/12*4);
     background-color: #0078ff;
     box-shadow: 300px 0 0 0 #0078ff, 600px 0 0 0 #0078ff, 900px 0 0 0 #0078ff;
+    @media screen and (--mobile) {
+        width: 100%;
+        box-shadow: none;
+        padding: 50px 20px;
+    }
 }
 
 .experience__sidebar-title {

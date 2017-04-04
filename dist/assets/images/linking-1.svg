@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="21px" viewBox="0 0 32 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Page 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="LP:-Верстка" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Сквозное-меню" transform="translate(-30.000000, -50.000000)" fill="#000000">
-            <path d="M30,52.1314057 L62,52.1314057 L62,50 L30,50 L30,52.1314057 Z M30,61.1318248 L46,61.1318248 L46,59 L30,59 L30,61.1318248 Z M30,70.1315454 L62,70.1315454 L62,68 L30,68 L30,70.1315454 Z" id="Page-1"></path>
-        </g>
-    </g>
-</svg>
+<svg width="32" height="21" viewBox="0 0 32 21" xmlns="http://www.w3.org/2000/svg"><title>Page 1</title><path d="M0 2.131h32V0H0v2.131zm0 9h16V9H0v2.132zm0 9h32V18H0v2.132z" fill-rule="evenodd"/></svg>

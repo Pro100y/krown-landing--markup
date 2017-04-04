@@ -1,5 +1,9 @@
 <section class="linking">
-    <button class="linking__button" @click="showModal=!showModal; changeScroll();"></button>
+    <button
+        class="linking__button"
+        :class="{ 'linking__button--active' : showModal}"
+        @click="showModal=!showModal; changeScroll();"
+    ></button>
 
     <transition name="linking--animation-">
 

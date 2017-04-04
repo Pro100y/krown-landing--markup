@@ -12,17 +12,17 @@ const App = new Vue({
         galleryLightbox: false,
         infiniteAjaxScroll: false,
         pagePreloader: false,
-        pixelPerfect: true,
+        pixelPerfect: false,
         rippleEffect: false,
         tooltips: false,
     },
     methods: {
         pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-order--960.png",
-                show: false,
+                src: "/assets/images/theme-contacts--320.jpg",
+                show: true,
                 top: 0,
-                left: 282,
+                left: 0,
                 opacity: 0.2
             });
         },

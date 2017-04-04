@@ -1,54 +1,96 @@
 .keys {
-    padding: 0 10px;
+    padding: 50px 10px 100px;
     width: 100%;
     background-color: #f6fbff;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    @media screen and (--mobile) {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
 }
 
 .keys__content-wrap {
     margin: 0 auto;
+    padding: 20px 20px 100px;
     max-width: 940px;
     width: 100%;
-    padding: 20px 20px 100px;
     background-image: linear-gradient(301deg, #c2e9fb, #a1c4fd);
+    @media screen and (--mobile) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #0078ff;
+        background-image: none;
+    }
 }
 
 .keys__title {
+    margin-bottom: 70px;
+    padding-top: 90px;
+    max-width: 480px;
     background-image: url(../images/key-1.svg);
     background-position: left top;
     background-repeat: no-repeat;
-    padding-top: 90px;
-    font-size: 30px;
-    letter-spacing: 3.8px;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 70px;
+    letter-spacing: 3.8px;
+    font-size: 30px;
+    @media screen and (--mobile) {
+        margin-bottom: 40px;
+        padding-top: 80px;
+        max-width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+    }
 }
 
 .keys__items-wrap {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    @media screen and (--mobile) {
+        display: block;
+    }
 }
 
 .keys__item {
-    width: calc((100% - 80px)/5);
     position: relative;
     padding-top: 15px;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1.17;
+    width: calc((100% - 80px)/5);
     color: #fff;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.17;
+    @media screen and (--mobile) {
+        padding-top: 0;
+        width: 100%;
+    }
+    &:not(:last-child) {
+        @media screen and (--mobile) {
+            margin-bottom: 8px;
+        }
+    }
     &::before {
-        content: '';
-        display: block;
         position: absolute;
-        left: 0;
         top: 0;
-        background-color: #fff;
+        left: 0;
+        display: block;
         width: 58px;
         height: 5px;
+        background-color: #fff;
+        content: '';
+        @media screen and (--mobile) {
+            position: relative;
+            display: inline;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+            content: '- ';
+        }
+    }
+    &::after {
+        @media screen and (--mobile) {
+            content: ';';
+        }
     }
 }

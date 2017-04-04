@@ -10,6 +10,10 @@
     max-width: 940px;
     width: 100%;
     padding-bottom: 50px;
+    @media screen and (--mobile) {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
 }
 
 .about-us__title {
@@ -22,6 +26,14 @@
     font-weight: 300;
     font-size: 48px;
     line-height: 1.17;
+    @media screen and (--mobile) {
+        font-size: 30px;
+        line-height: 1.27;
+        background-size: 139px 10px;
+        background-position: 131px 63px;
+        max-width: 280px;
+        margin-bottom: 30px;
+    }
 }
 
 .about-us__subtitle {
@@ -30,6 +42,9 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 12px;
+    @media screen and (--mobile) {
+        margin-bottom: 22px;
+    }
 }
 
 .about-us__paragraph {
@@ -38,8 +53,16 @@
     line-height: 1.5;
     &:not(:last-child) {
         margin-bottom: 40px;
+        @media screen and (--mobile) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (--mobile) {
+        line-height: 1.67;
+        font-size: 18px;
     }
 }
+
 .about-us__paragraph-accent {
     font-weight: 700;
 }

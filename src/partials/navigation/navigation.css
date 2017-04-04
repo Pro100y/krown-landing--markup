@@ -12,6 +12,10 @@
     width: 100%;
     display: flex;
     align-items: center;
+    @media screen and (--mobile) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 .navigation__logo {
@@ -26,6 +30,9 @@
 .navigation__menu {
     margin-bottom: 10px;
     margin-left: auto;
+    @media screen and (--mobile) {
+        display: none;
+    }
 }
 
 .navigation__menu-item {
@@ -35,12 +42,17 @@
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 12px;
-    &:hover {
+    &:hover,
+    &--active {
         color: #0068fc;
     }
 }
 
 .navigation__menu-order {
+    @nest [data-page=home] & {
+        opacity: 0;
+        pointer-events: none;
+    }
     font-size: 16px;
     color: #fff;
     padding: 22px;

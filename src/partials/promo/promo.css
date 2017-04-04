@@ -3,6 +3,9 @@
     padding: 0 10px 130px;
     width: 100%;
     background-color: #f6fbff;
+    @media screen and (--mobile) {
+        padding-bottom: 50px;
+    }
 }
 
 .promo__content-wrap {
@@ -10,6 +13,9 @@
     padding-top: 68px;
     max-width: 940px;
     width: 100%;
+    @media screen and (--mobile) {
+        padding-top: 0;
+    }
 }
 
 .promo__container {
@@ -21,6 +27,10 @@
 .promo__content {
     padding-top: 24px;
     width: 540px;
+    @media screen and (--mobile) {
+        padding-top: 21px;
+        width: 100%;
+    }
 }
 
 .promo__title {
@@ -32,6 +42,13 @@
     font-weight: 300;
     font-size: 48px;
     line-height: 1.17;
+    @media screen and (--mobile) {
+        max-width: 300px;
+        background-position: 164px 59px;
+        background-size: 110px 10px;
+        font-size: 30px;
+        line-height: 1.27;
+    }
 }
 
 .promo__subtitle {
@@ -40,6 +57,9 @@
     font-size: 18px;
     font-family: proxima-nova;
     line-height: 1.67;
+    @media screen and (--mobile) {
+        display: none;
+    }
 }
 
 .promo__items-wrap {
@@ -47,6 +67,9 @@
     flex-wrap: wrap;
     margin-bottom: 50px;
     width: 100%;
+    @media screen and (--mobile) {
+        margin-bottom: 30px;
+    }
 }
 
 .promo__item {
@@ -90,10 +113,25 @@
     background-position: 30px center;
     background-repeat: no-repeat;
     color: #fff;
+    text-align: center;
     white-space: nowrap;
     font-weight: 300;
     font-size: 30px;
     line-height: 80px;
+    @media screen and (--mobile) {
+        display: none;
+        margin-bottom: 18px;
+        padding: 0 26px 0 76px;
+        width: 100%;
+        background-position: 20px center;
+        font-size: 24px;
+    }
+    &--mobile {
+        display: none;
+        @media screen and (--mobile) {
+            display: inline-block;
+        }
+    }
     &:hover {
         background-color: #0068fc;
     }
@@ -107,6 +145,9 @@
     font-weight: 300;
     font-size: 20px;
     transform: translateX(53px);
+    @media screen and (--mobile) {
+        transform: translateX(41px);
+    }
     &::before {
         position: absolute;
         top: 50%;
@@ -125,6 +166,9 @@
 .promo__image-wrap {
     position: relative;
     width: calc(100% - 540px - 20px);
+    @media screen and (--mobile) {
+        display: none;
+    }
 }
 
 .promo__image {

@@ -11,6 +11,9 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 1.17;
+    @media screen and (--mobile) {
+        margin-bottom: 32px;
+    }
     &--success {
         @nest [data-form-success] & {
             display: block;
@@ -33,6 +36,9 @@
     font-size: 18px;
     font-family: proxima-nova;
     line-height: 1.33;
+    @media screen and (--mobile) {
+        margin-bottom: 20px;
+    }
     &--success {
         @nest [data-form-success] & {
             display: block;
@@ -47,6 +53,13 @@
 }
 
 .form-question__input {
+    @media screen and (--mobile) {
+        height: 80px;
+        font-size: 18px;
+        letter-spacing: 1.7px;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
     @nest [data-form-success] & {
         display: none;
     }
@@ -70,6 +83,13 @@
 }
 
 .form-question__button {
+    @nest [data-form-success] & {
+        display: none;
+    }
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    z-index: 1;
     width: 100px;
     height: 74px;
     border-radius: 100px;
@@ -77,29 +97,29 @@
     background-image: url(../images/form-question-1.svg);
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
-    z-index: 1;
-    right: 13px;
-    top: 13px;
     &:hover {
         background-color: rgba(42, 138, 234, 0.8);
+    }
+    @media screen and (--mobile) {
+        width: 70px;
+        height: 54px;
     }
 }
 
 .form-question__status {
     display: none;
-    font-family: proxima-nova;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.33;
-    color: #838383;
     padding-bottom: 20px;
+    color: #838383;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: proxima-nova;
+    line-height: 1.33;
 }
 
 .form-question__description {
-    font-family: proxima-nova;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.33;
     color: #838383;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: proxima-nova;
+    line-height: 1.33;
 }

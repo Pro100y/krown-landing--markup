@@ -16,6 +16,12 @@
     background-position: left center;
     background-size: contain;
     background-repeat: no-repeat;
+    &:hover:not(.linking__button--active) {
+        background-image: url(../images/linking-7.svg);
+    }
+    &--active {
+        background-image: url(../images/linking-8.png);
+    }
 }
 
 .linking__modal {
@@ -27,7 +33,7 @@
     align-items: center;
     justify-content: center;
     overflow: auto;
-    padding: 1rem ;
+    padding: 1rem;
     width: 100%;
     height: 100%;
     background-color: #fff;

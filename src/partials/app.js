@@ -468,14 +468,14 @@ Vue.component('map-widget', {
 
             ymaps.ready().done(function (ym) {
                 var map = new ym.Map('map-widget', {
-                    center: [44.58330422853194, 33.47989102536938],
+                    center: [44.584508154698284, 33.48243169524696],
                     zoom: 17,
                     controls: []
                 }, {
                     searchControlProvider: 'yandex#search'
                 });
 
-                var placemark = new ymaps.Placemark([44.58330422853194, 33.48230501348279], {
+                var placemark = new ymaps.Placemark([44.583342702721794, 33.48246388175512], {
                     hintContent: 'г. Севастополь, Фиолентовское шоссе, д.1',
                     balloonContent: 'KROWN'
                 });
@@ -489,7 +489,24 @@ Vue.component('map-widget', {
 });
 Vue.component('navigation', {
     delimiters: ['[[', ']]'],
-    template: require('./navigation/navigation.htm')
+    template: require('./navigation/navigation.htm'),
+    computed: {
+        currentPage: function currentPage() {
+            if (document.querySelectorAll('[data-page="home"]').length) {
+                return 'home';
+            } else if (document.querySelectorAll('[data-page="about-us"]').length) {
+                return 'about-us';
+            } else if (document.querySelectorAll('[data-page="outsource"]').length) {
+                return 'outsource';
+            } else if (document.querySelectorAll('[data-page="projects"]').length) {
+                return 'projects';
+            } else if (document.querySelectorAll('[data-page="contacts"]').length) {
+                return 'contacts';
+            } else {
+                console.warn('Текущая страница неопределена.');
+            }
+        }
+    }
 });
 Vue.component('order', {
     delimiters: ['[[', ']]'],
@@ -498,8 +515,32 @@ Vue.component('order', {
 Vue.component('projects-gallery-item', {
     delimiters: ['[[', ']]'],
     template: require('./projects/projects__gallery-item.htm'),
+    data: function data() {
+        return {
+            showWorkFrame: false
+        };
+    },
+
     props: ['link', 'image', 'suptitle', 'title'],
+    methods: {
+        changeScroll: function changeScroll() {
+            if (this.showWorkFrame === true) {
+                $('html').attr('data-lock-scroll', '').css({
+                    'paddingRight': '15px'
+                });
+            } else {
+                setTimeout(function () {
+                    $('html').removeAttr('data-lock-scroll').css({
+                        'paddingRight': '0px'
+                    });
+                }, 500);
+            }
+        }
+    },
     mounted: function mounted() {
+
+        var vm = this;
+
         $.adaptiveBackground.run({
             selector: '[data-adaptive-background]',
             parent: null,
@@ -520,27 +561,83 @@ Vue.component('projects-gallery-item', {
 Vue.component('projects', {
     delimiters: ['[[', ']]'],
     template: require('./projects/projects.htm'),
+    data: function data() {
+        return {
+            device: 'laptop'
+        };
+    },
+
+    methods: {
+        detectDevice: function detectDevice() {
+            if ($(window).width() >= 960) {
+                return 'laptop';
+            } else {
+                return 'mobile';
+            }
+        }
+    },
     mounted: function mounted() {
 
-        var $grid = $('.projects__gallery-items-wrap').isotope({
-            itemSelector: '.projects__gallery-item'
-        });
-        $('.projects__gallery-nav').on('click', 'button', function () {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: filterValue
-            });
+        var vm = this;
+
+        // определяем устройство клиента
+        vm.device = vm.detectDevice();
+
+        window.addEventListener('resize', function () {
+            vm.device = vm.detectDevice();
         });
 
-        $('.projects__gallery-nav-item').click(function () {
-            $('.projects__gallery-nav-item--active').removeClass('projects__gallery-nav-item--active');
-            $(this).addClass('projects__gallery-nav-item--active');
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // инициализируем сетку
+            var $grid = $('.projects__gallery-items-wrap').isotope({
+                itemSelector: '.projects__gallery-item'
+            });
+
+            // инициализируем фильтр
+            $('.projects__gallery-nav').on('click', 'button', function () {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({
+                    filter: filterValue
+                });
+            });
+
+            // делаем кнопки фильтра активными при нажаии
+            $('.projects__gallery-nav-item').click(function () {
+                $('.projects__gallery-nav-item--active').removeClass('projects__gallery-nav-item--active');
+                $(this).addClass('projects__gallery-nav-item--active');
+            });
         });
     }
 });
 Vue.component('promo', {
     delimiters: ['[[', ']]'],
-    template: require('./promo/promo.htm')
+    template: require('./promo/promo.htm'),
+    data: function data() {
+        return {
+            device: ''
+        };
+    },
+
+    methods: {
+        detectDevice: function detectDevice() {
+            if ($(window).width() >= 960) {
+                return 'laptop';
+            } else {
+                return 'mobile';
+            }
+        }
+    },
+    mounted: function mounted() {
+
+        var vm = this;
+
+        vm.device = vm.detectDevice();
+
+        window.addEventListener('resize', function () {
+            vm.device = vm.detectDevice();
+        });
+    }
 });
 Vue.component('quality-item', {
     delimiters: ['[[', ']]'],
@@ -593,8 +690,29 @@ Vue.component('quality', {
     template: require('./quality/quality.htm'),
     data: function data() {
         return {
-            readmore: false
+            readmore: false,
+            device: ''
         };
+    },
+
+    methods: {
+        detectDevice: function detectDevice() {
+            if ($(window).width() >= 960) {
+                return 'laptop';
+            } else {
+                return 'mobile';
+            }
+        }
+    },
+    mounted: function mounted() {
+
+        var vm = this;
+
+        vm.device = vm.detectDevice();
+
+        window.addEventListener('resize', function () {
+            vm.device = vm.detectDevice();
+        });
     }
 });
 Vue.component('site-footer', {
@@ -639,17 +757,17 @@ var App = new Vue({
         galleryLightbox: false,
         infiniteAjaxScroll: false,
         pagePreloader: false,
-        pixelPerfect: true,
+        pixelPerfect: false,
         rippleEffect: false,
         tooltips: false
     },
     methods: {
         pixlayout: function pixlayout() {
             $.pixlayout({
-                src: "/assets/images/theme-order--960.png",
-                show: false,
+                src: "/assets/images/theme-contacts--320.jpg",
+                show: true,
                 top: 0,
-                left: 282,
+                left: 0,
                 opacity: 0.2
             });
         },
