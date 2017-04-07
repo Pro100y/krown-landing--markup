@@ -1,24 +1,25 @@
+{% set appColor = '#2a8aea' %}
+{% set appName  = 'KROWN' %}
+
 <meta charset="utf-8">
 <meta name="format-detection" content="telephone=no">
-<meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 {# Manifest #}
 <link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="{{ background_color }}">
 
 {# Meta tags #}
 <title>{{ title }}</title>
 <meta name="description" content={{ description }}>
 
 {# Open Graph #}
-<meta property="og:description" content="Здесь будет описание содержимого">
+<meta property="og:description" content="{{ description }}">
 <meta property="og:image" content="/images/theme-preview.png">
 <meta property="og:locale" content="ru_RU">
-<meta property="og:site_name" content="{{ name }}">
+<meta property="og:site_name" content="{{ appName }}">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:type" content="website">
-<meta property="og:url" content="/pages/{{ page }}.html">
+<meta property="og:url" content="/">
 
 {# Styles #}
 <link href="/assets/styles/vendor.css" rel="stylesheet">
@@ -26,8 +27,8 @@
 
 {# Icons #}
 <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
-<meta name="application-name" content="{{ name }}">
-<meta name="msapplication-TileColor" content="{{ background_color }}">
+<meta name="application-name" content="{{ appName }}">
+<meta name="msapplication-TileColor" content="{{ appColor }}">
 <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
 <meta name="msapplication-square70x70logo" content="/assets/icons/mstile-70x70.png">
 <meta name="msapplication-square150x150logo" content="/assets/icons/mstile-150x150.png">
