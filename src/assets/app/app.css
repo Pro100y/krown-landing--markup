@@ -92,12 +92,20 @@
     color: var(--colorPlaceholder);
 }
 
-:focus::-webkit-input-placeholder,
-:focus::-moz-placeholder,
-:focus:-moz-placeholder,
-:focus:-ms-input-placeholder {
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
 
-    /*color: transparent;*/
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
 }
 
 ::-moz-selection,
