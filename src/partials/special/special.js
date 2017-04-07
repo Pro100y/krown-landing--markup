@@ -1,4 +1,4 @@
 Vue.component('special', {
     delimiters: ['[[', ']]'],
-    template: require('./special/special.htm')
+    template: require('./special/special.tpl')
 });

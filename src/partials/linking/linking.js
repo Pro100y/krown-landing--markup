@@ -1,6 +1,6 @@
 Vue.component('linking', {
     delimiters: ['[[', ']]'],
-    template: require('./linking/linking.htm'),
+    template: require('./linking/linking.tpl'),
     data() {
         return {
             showModal: false

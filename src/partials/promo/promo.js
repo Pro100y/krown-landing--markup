@@ -1,6 +1,6 @@
 Vue.component('promo', {
     delimiters: ['[[', ']]'],
-    template: require('./promo/promo.htm'),
+    template: require('./promo/promo.tpl'),
     data() {
         return {
             device: ''

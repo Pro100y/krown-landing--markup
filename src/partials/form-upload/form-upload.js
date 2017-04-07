@@ -1,6 +1,6 @@
 Vue.component('form-upload', {
     delimiters: ['[[', ']]'],
-    template: require('./form-upload/form-upload.htm'),
+    template: require('./form-upload/form-upload.tpl'),
     methods: {
         //фикс начальной высоты табов
         heightFix: function () {

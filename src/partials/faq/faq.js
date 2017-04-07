@@ -1,6 +1,6 @@
 Vue.component('faq', {
     delimiters: ['[[', ']]'],
-    template: require('./faq/faq.htm'),
+    template: require('./faq/faq.tpl'),
     data() {
         return {
             faq: {
@@ -9,13 +9,13 @@ Vue.component('faq', {
                     text: 'На следующий рабочий день после получения предоплаты.',
                 }, {
                     title: 'Как будет происходить коммуникация?',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat delectus reprehenderit maiores, ex ipsam magni saepe minus voluptatibus rerum, quo magnam est, expedita ut sint sed vero sit doloribus.',
+                    text: 'Вы сможете обсудить все существенные детали проекта с менеджером по телефону или скайпу. Для предметного обсуждения проекта нам в любом случае потребуется взглянуть на макеты страниц, поэтому давайте начнем с оформления заявки через форму заказа, которая расположена выше.',
                 }, {
                     title: 'Как можно оплатить?',
-                    text: 'Similique illo accusamus, quae nulla consectetur, obcaecati labore aspernatur eveniet, tempora in enim voluptatibus dolor sunt a nobis. Saepe beatae harum doloremque velit, dignissimos asperiores iste provident. Molestiae, iusto ducimus.',
+                    text: 'Мы принимаем оплату по безналичному расчёту от юридических лиц, а также с помощью банковских карт (Mastercard, Visa).',
                 }, {
                     title: 'В каком виде я получу результат?',
-                    text: 'Optio accusantium eos doloremque, fugiat adipisci molestiae voluptates expedita omnis modi amet odit architecto accusamus. Explicabo distinctio eum deserunt accusantium totam? Ut, dolorem iure recusandae quae suscipit corporis ea repellendus.',
+                    text: 'Мы можем предоставить результат в виде минифицированного кода (оптимизированного по скорости загрузки), в виде обычного форматированного html/css, либо в формате одного из препроцессора.',
                 }]
             }
         }

@@ -1,4 +1,4 @@
 Vue.component('keys', {
     delimiters: ['[[', ']]'],
-    template: require('./keys/keys.htm')
+    template: require('./keys/keys.tpl')
 });

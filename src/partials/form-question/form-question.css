@@ -1,11 +1,33 @@
 .form-question {
     width: 100%;
+    position: relative;
+}
+
+.form-question__success {
+    @nest [data-form-success] & {
+        z-index: 10;
+        opacity: 1;
+    }
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #2e2b3c;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition-duration: var(--transitionDuration);
+    z-index: -1;
+    opacity: 0;
+}
+
+.form-question__success-content-wrap {
+    position: relative;
+    width: 100%
 }
 
 .form-question__title {
-    @nest [data-form-success] & {
-        display: none;
-    }
     margin-bottom: 20px;
     color: #ffffff;
     font-weight: bold;
@@ -15,10 +37,7 @@
         margin-bottom: 32px;
     }
     &--success {
-        @nest [data-form-success] & {
-            display: block;
-        }
-        display: none;
+        display: block;
         padding-top: 108px;
         background-image: url(../images/site-footer-2.png);
         background-position: left top;
@@ -27,9 +46,6 @@
 }
 
 .form-question__subtitle {
-    @nest [data-form-success] & {
-        display: none;
-    }
     margin-bottom: 30px;
     color: #ffffff;
     font-weight: 300;
@@ -40,10 +56,7 @@
         margin-bottom: 20px;
     }
     &--success {
-        @nest [data-form-success] & {
-            display: block;
-        }
-        display: none;
+        display: block;
     }
 }
 
@@ -53,16 +66,6 @@
 }
 
 .form-question__input {
-    @media screen and (--mobile) {
-        height: 80px;
-        font-size: 18px;
-        letter-spacing: 1.7px;
-        padding: 0 20px;
-        margin-bottom: 30px;
-    }
-    @nest [data-form-success] & {
-        display: none;
-    }
     margin: 0 auto 20px;
     padding: 0 30px;
     width: 100%;
@@ -74,6 +77,13 @@
     text-align: left;
     font-size: 30px;
     font-family: futura-pt;
+    @media screen and (--mobile) {
+        margin-bottom: 30px;
+        padding: 0 20px;
+        height: 80px;
+        letter-spacing: 1.7px;
+        font-size: 18px;
+    }
     &:focus {
         background-color: #494559;
     }
@@ -83,9 +93,6 @@
 }
 
 .form-question__button {
-    @nest [data-form-success] & {
-        display: none;
-    }
     position: absolute;
     top: 13px;
     right: 13px;
@@ -97,12 +104,12 @@
     background-image: url(../images/form-question-1.svg);
     background-position: center;
     background-repeat: no-repeat;
-    &:hover {
-        background-color: rgba(42, 138, 234, 0.8);
-    }
     @media screen and (--mobile) {
         width: 70px;
         height: 54px;
+    }
+    &:hover {
+        background-color: rgba(42, 138, 234, 0.8);
     }
 }
 

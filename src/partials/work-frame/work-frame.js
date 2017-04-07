@@ -1,6 +1,6 @@
 Vue.component('work-frame', {
     delimiters: ['[[', ']]'],
-    template: require('./work-frame/work-frame.htm'),
+    template: require('./work-frame/work-frame.tpl'),
     props: [
         'href',
         'type',

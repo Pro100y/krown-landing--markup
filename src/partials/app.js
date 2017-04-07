@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
             $(this).removeAttr('data-form-field-invalid');
             if ($(this).val() == '' || $(this).val() == $(this).attr('placeholder')) {
                 $(this).attr('data-form-field-invalid', '');
-                $f.find('[data-form-field-invalid]').addClass('shake animated');
+                $f.find('[data-form-field-invalid], .form-question__button').addClass('shake animated');
                 setTimeout(function () {
-                    $f.find('[data-form-field-invalid]').removeClass('shake animated');
+                    $f.find('[data-form-field-invalid], .form-question__button').removeClass('shake animated');
                 }, 1000);
             }
         });
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var r = parseInt(response);
 
                 $b.text(bVal);
-                $s.html(status[r]).slideDown(500);
+                // $s.html(status[r]).slideDown(500);
 
                 if (r == 1) {
                     $f.attr('data-form-success', '');
@@ -136,17 +136,17 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 Vue.component('about-us', {
     delimiters: ['[[', ']]'],
-    template: require('./about-us/about-us.htm')
+    template: require('./about-us/about-us.tpl')
 });
 Vue.component('advantages-tab', {
     delimiters: ['[[', ']]'],
-    template: require('./advantages/advantages__tab.htm'),
+    template: require('./advantages/advantages__tab.tpl'),
     props: ['promoTitle', 'promoText', 'content']
 });
 
 Vue.component('advantages', {
     delimiters: ['[[', ']]'],
-    template: require('./advantages/advantages.htm'),
+    template: require('./advantages/advantages.tpl'),
     mounted: function mounted() {
         $('.advantages').tabtab({
             tabMenu: '.advantages__nav', // direct container of the tab menu items
@@ -185,15 +185,15 @@ Vue.component('advantages', {
 });
 Vue.component('contacts', {
     delimiters: ['[[', ']]'],
-    template: require('./contacts/contacts.htm')
+    template: require('./contacts/contacts.tpl')
 });
 Vue.component('experience', {
     delimiters: ['[[', ']]'],
-    template: require('./experience/experience.htm')
+    template: require('./experience/experience.tpl')
 });
 Vue.component('faq', {
     delimiters: ['[[', ']]'],
-    template: require('./faq/faq.htm'),
+    template: require('./faq/faq.tpl'),
     data: function data() {
         return {
             faq: {
@@ -202,13 +202,13 @@ Vue.component('faq', {
                     text: 'На следующий рабочий день после получения предоплаты.'
                 }, {
                     title: 'Как будет происходить коммуникация?',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quaerat delectus reprehenderit maiores, ex ipsam magni saepe minus voluptatibus rerum, quo magnam est, expedita ut sint sed vero sit doloribus.'
+                    text: 'Вы сможете обсудить все существенные детали проекта с менеджером по телефону или скайпу. Для предметного обсуждения проекта нам в любом случае потребуется взглянуть на макеты страниц, поэтому давайте начнем с оформления заявки через форму заказа, которая расположена выше.'
                 }, {
                     title: 'Как можно оплатить?',
-                    text: 'Similique illo accusamus, quae nulla consectetur, obcaecati labore aspernatur eveniet, tempora in enim voluptatibus dolor sunt a nobis. Saepe beatae harum doloremque velit, dignissimos asperiores iste provident. Molestiae, iusto ducimus.'
+                    text: 'Мы принимаем оплату по безналичному расчёту от юридических лиц, а также с помощью банковских карт (Mastercard, Visa).'
                 }, {
                     title: 'В каком виде я получу результат?',
-                    text: 'Optio accusantium eos doloremque, fugiat adipisci molestiae voluptates expedita omnis modi amet odit architecto accusamus. Explicabo distinctio eum deserunt accusantium totam? Ut, dolorem iure recusandae quae suscipit corporis ea repellendus.'
+                    text: 'Мы можем предоставить результат в виде минифицированного кода (оптимизированного по скорости загрузки), в виде обычного форматированного html/css, либо в формате одного из препроцессора.'
                 }]
             }
         };
@@ -223,7 +223,7 @@ Vue.component('faq', {
 });
 Vue.component('file-upload', {
     delimiters: ['[[', ']]'],
-    template: require('./file-upload/file-upload.htm'),
+    template: require('./file-upload/file-upload.tpl'),
     data: function data() {
         return {
             showCancelAllButton: false,
@@ -334,7 +334,7 @@ Vue.component('file-upload', {
 });
 Vue.component('form-order', {
     delimiters: ['[[', ']]'],
-    template: require('./form-order/form-order.htm'),
+    template: require('./form-order/form-order.tpl'),
     props: ['plan', 'planDescription', 'cost'],
     computed: {
         location: function (_location) {
@@ -354,7 +354,7 @@ Vue.component('form-order', {
 });
 Vue.component('form-question', {
     delimiters: ['[[', ']]'],
-    template: require('./form-question/form-question.htm'),
+    template: require('./form-question/form-question.tpl'),
     computed: {
         location: function (_location2) {
             function location() {
@@ -373,7 +373,7 @@ Vue.component('form-question', {
 });
 Vue.component('form-upload', {
     delimiters: ['[[', ']]'],
-    template: require('./form-upload/form-upload.htm'),
+    template: require('./form-upload/form-upload.tpl'),
     methods: {
         //фикс начальной высоты табов
         heightFix: function heightFix() {
@@ -418,15 +418,15 @@ Vue.component('form-upload', {
 });
 Vue.component('keys', {
     delimiters: ['[[', ']]'],
-    template: require('./keys/keys.htm')
+    template: require('./keys/keys.tpl')
 });
 Vue.component('lightbox', {
     delimiters: ['[[', ']]'],
-    template: require('./lightbox/lightbox.htm')
+    template: require('./lightbox/lightbox.tpl')
 });
 Vue.component('linking', {
     delimiters: ['[[', ']]'],
-    template: require('./linking/linking.htm'),
+    template: require('./linking/linking.tpl'),
     data: function data() {
         return {
             showModal: false
@@ -457,7 +457,7 @@ Vue.component('linking', {
 });
 Vue.component('map-widget', {
     delimiters: ['[[', ']]'],
-    template: require('./map-widget/map-widget.htm'),
+    template: require('./map-widget/map-widget.tpl'),
     props: ['address'],
     mounted: function mounted() {
 
@@ -469,8 +469,7 @@ Vue.component('map-widget', {
             ymaps.ready().done(function (ym) {
                 var map = new ym.Map('map-widget', {
                     center: [44.584508154698284, 33.48243169524696],
-                    zoom: 17,
-                    controls: []
+                    zoom: 17
                 }, {
                     searchControlProvider: 'yandex#search'
                 });
@@ -489,7 +488,7 @@ Vue.component('map-widget', {
 });
 Vue.component('navigation', {
     delimiters: ['[[', ']]'],
-    template: require('./navigation/navigation.htm'),
+    template: require('./navigation/navigation.tpl'),
     computed: {
         currentPage: function currentPage() {
             if (document.querySelectorAll('[data-page="home"]').length) {
@@ -510,11 +509,11 @@ Vue.component('navigation', {
 });
 Vue.component('order', {
     delimiters: ['[[', ']]'],
-    template: require('./order/order.htm')
+    template: require('./order/order.tpl')
 });
 Vue.component('projects-gallery-item', {
     delimiters: ['[[', ']]'],
-    template: require('./projects/projects__gallery-item.htm'),
+    template: require('./projects/projects__gallery-item.tpl'),
     data: function data() {
         return {
             showWorkFrame: false
@@ -560,7 +559,7 @@ Vue.component('projects-gallery-item', {
 
 Vue.component('projects', {
     delimiters: ['[[', ']]'],
-    template: require('./projects/projects.htm'),
+    template: require('./projects/projects.tpl'),
     data: function data() {
         return {
             device: 'laptop'
@@ -612,7 +611,7 @@ Vue.component('projects', {
 });
 Vue.component('promo', {
     delimiters: ['[[', ']]'],
-    template: require('./promo/promo.htm'),
+    template: require('./promo/promo.tpl'),
     data: function data() {
         return {
             device: ''
@@ -641,7 +640,7 @@ Vue.component('promo', {
 });
 Vue.component('quality-item', {
     delimiters: ['[[', ']]'],
-    template: require('./quality/quality__item.htm'),
+    template: require('./quality/quality__item.tpl'),
     data: function data() {
         return {
             showWorkFrame: false
@@ -687,7 +686,7 @@ Vue.component('quality-item', {
 
 Vue.component('quality', {
     delimiters: ['[[', ']]'],
-    template: require('./quality/quality.htm'),
+    template: require('./quality/quality.tpl'),
     data: function data() {
         return {
             readmore: false,
@@ -717,7 +716,7 @@ Vue.component('quality', {
 });
 Vue.component('site-footer', {
     delimiters: ['[[', ']]'],
-    template: require('./site-footer/site-footer.htm'),
+    template: require('./site-footer/site-footer.tpl'),
     computed: {
         location: function (_location3) {
             function location() {
@@ -736,11 +735,11 @@ Vue.component('site-footer', {
 });
 Vue.component('special', {
     delimiters: ['[[', ']]'],
-    template: require('./special/special.htm')
+    template: require('./special/special.tpl')
 });
 Vue.component('work-frame', {
     delimiters: ['[[', ']]'],
-    template: require('./work-frame/work-frame.htm'),
+    template: require('./work-frame/work-frame.tpl'),
     props: ['href', 'type', 'name']
 });
 var App = new Vue({

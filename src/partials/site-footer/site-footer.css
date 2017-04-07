@@ -71,10 +71,12 @@
 
 .site-footer__city {
     display: block;
+    /*
     padding-top: 45px;
     background-image: url(../images/site-footer-1.svg);
     background-position: center top;
     background-repeat: no-repeat;
+    */
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;

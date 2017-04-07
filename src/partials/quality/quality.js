@@ -1,6 +1,6 @@
 Vue.component('quality-item', {
     delimiters: ['[[', ']]'],
-    template: require('./quality/quality__item.htm'),
+    template: require('./quality/quality__item.tpl'),
     data() {
         return {
             showWorkFrame: false
@@ -55,7 +55,7 @@ Vue.component('quality-item', {
 
 Vue.component('quality', {
     delimiters: ['[[', ']]'],
-    template: require('./quality/quality.htm'),
+    template: require('./quality/quality.tpl'),
     data() {
         return {
             readmore: false,

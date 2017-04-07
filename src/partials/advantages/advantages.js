@@ -1,6 +1,6 @@
 Vue.component('advantages-tab', {
     delimiters: ['[[', ']]'],
-    template: require('./advantages/advantages__tab.htm'),
+    template: require('./advantages/advantages__tab.tpl'),
     props: [
         'promoTitle',
         'promoText',
@@ -10,7 +10,7 @@ Vue.component('advantages-tab', {
 
 Vue.component('advantages', {
     delimiters: ['[[', ']]'],
-    template: require('./advantages/advantages.htm'),
+    template: require('./advantages/advantages.tpl'),
     mounted() {
         $('.advantages').tabtab({
             tabMenu: '.advantages__nav', // direct container of the tab menu items

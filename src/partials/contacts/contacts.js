@@ -1,4 +1,4 @@
 Vue.component('contacts', {
     delimiters: ['[[', ']]'],
-    template: require('./contacts/contacts.htm')
+    template: require('./contacts/contacts.tpl')
 });

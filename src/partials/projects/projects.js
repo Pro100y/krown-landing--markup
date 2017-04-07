@@ -1,6 +1,6 @@
 Vue.component('projects-gallery-item', {
     delimiters: ['[[', ']]'],
-    template: require('./projects/projects__gallery-item.htm'),
+    template: require('./projects/projects__gallery-item.tpl'),
     data() {
         return {
             showWorkFrame: false
@@ -55,7 +55,7 @@ Vue.component('projects-gallery-item', {
 
 Vue.component('projects', {
     delimiters: ['[[', ']]'],
-    template: require('./projects/projects.htm'),
+    template: require('./projects/projects.tpl'),
     data() {
         return {
             device: 'laptop'

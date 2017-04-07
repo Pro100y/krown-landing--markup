@@ -1,6 +1,6 @@
 Vue.component('navigation', {
     delimiters: ['[[', ']]'],
-    template: require('./navigation/navigation.htm'),
+    template: require('./navigation/navigation.tpl'),
     computed: {
         currentPage: function () {
             if (document.querySelectorAll('[data-page="home"]').length) {

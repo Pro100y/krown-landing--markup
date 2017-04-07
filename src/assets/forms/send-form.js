@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
             $(this).removeAttr('data-form-field-invalid');
             if ($(this).val() == '' || $(this).val() == $(this).attr('placeholder')) {
                 $(this).attr('data-form-field-invalid', '')
-                $f.find('[data-form-field-invalid]')
+                $f.find('[data-form-field-invalid], .form-question__button')
                     .addClass('shake animated');
                 setTimeout(function () {
-                    $f.find('[data-form-field-invalid]')
+                    $f.find('[data-form-field-invalid], .form-question__button')
                         .removeClass('shake animated');
                 }, 1000);
             }
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var r = parseInt(response);
 
                 $b.text(bVal);
-                $s.html(status[r]).slideDown(500);
+                // $s.html(status[r]).slideDown(500);
 
                 if (r == 1) {
                     $f.attr('data-form-success', '');

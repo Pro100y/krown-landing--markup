@@ -6,8 +6,10 @@
 >
 
     <figure class="form-question__success">
-        <p class="form-question__title form-question__title--success">Спасибо за ваше обращение</p>
-        <p class="form-question__subtitle form-question__subtitle--success">Мы перезвоним вам в самое ближайшее время!</p>
+        <div class="form-question__success-content-wrap">
+            <p class="form-question__title form-question__title--success">Спасибо за ваше обращение</p>
+            <p class="form-question__subtitle form-question__subtitle--success">Мы перезвоним вам в самое ближайшее время!</p>
+        </div>
     </figure>
 
     <p class="form-question__title">Остались вопросы?</p>
@@ -17,7 +19,7 @@
         <input
             type        = "text"
             class       = "form-question__input"
-            placeholder = "+7 (495) 000-00-00"
+            placeholder = "+7 (___) ___-__-__"
             name        = "ff1"
             required
             data-form-phone-field

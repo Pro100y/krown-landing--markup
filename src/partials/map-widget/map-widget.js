@@ -1,6 +1,6 @@
 Vue.component('map-widget', {
     delimiters: ['[[', ']]'],
-    template: require('./map-widget/map-widget.htm'),
+    template: require('./map-widget/map-widget.tpl'),
     props: [
         'address'
     ],
@@ -15,7 +15,7 @@ Vue.component('map-widget', {
                 var map = new ym.Map('map-widget', {
                     center: [44.584508154698284,33.48243169524696],
                     zoom: 17,
-                    controls: []
+                    // controls: []
                 }, {
                     searchControlProvider: 'yandex#search'
                 });

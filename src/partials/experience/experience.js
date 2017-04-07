@@ -1,4 +1,4 @@
 Vue.component('experience', {
     delimiters: ['[[', ']]'],
-    template: require('./experience/experience.htm')
+    template: require('./experience/experience.tpl')
 });

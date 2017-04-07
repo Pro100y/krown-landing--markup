@@ -1,6 +1,6 @@
 Vue.component('form-order', {
     delimiters: ['[[', ']]'],
-    template: require('./form-order/form-order.htm'),
+    template: require('./form-order/form-order.tpl'),
     props: [
         'plan',
         'planDescription',

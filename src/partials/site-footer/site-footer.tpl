@@ -21,7 +21,7 @@
     <div class="site-footer__content-wrap">
 
         <a href="mailto:hello.krown.cc" class="site-footer__email">HELLO@KROWN.CC</a>
-        <span class="site-footer__city">Севастополь</span>
+        <span class="site-footer__city">Севастополь, Фиолентовское шоссе  д.1</span>
         <a href="tel:+74959899857" class="site-footer__phone">+7 (495) 989-98-57</a>
 
     </div>

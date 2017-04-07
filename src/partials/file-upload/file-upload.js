@@ -1,6 +1,6 @@
 Vue.component('file-upload', {
     delimiters: ['[[', ']]'],
-    template: require('./file-upload/file-upload.htm'),
+    template: require('./file-upload/file-upload.tpl'),
     data() {
         return {
             showCancelAllButton: false,
