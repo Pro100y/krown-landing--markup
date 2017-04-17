@@ -29,6 +29,6 @@
 
     <p data-form-status class="form-question__status">Статус отправки</p>
 
-    <p class="form-question__description">Или звоните нам по номеру +7 (495) 989-98-57</p>
+    <p class="form-question__description">Или звоните нам по номеру +7 (495) 118 23 73</p>
 
 </form>

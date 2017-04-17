@@ -88,7 +88,7 @@ module.exports = "<figure class=advantages__tab> <div class=advantages__tab-cont
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=contacts> <div class=contacts__content-wrap> <address class=contacts__content> <header class=contacts__title>Контакты</header> <p class=contacts__text> г. Севастополь, <br>Фиолентовское шоссе, д.1 </p> <a href=mailto:verstka@krown.cc class=contacts__mail>verstka@krown.cc</a> <br> <a href=tel:+74959899857 class=contacts__phone>+7 (495) 989-98-57</a> </address> </div> <slot></slot> </section>";
+module.exports = "<section class=contacts> <div class=contacts__content-wrap> <address class=contacts__content> <header class=contacts__title>Контакты</header> <p class=contacts__text> г. Севастополь, <br>Фиолентовское шоссе, д.1 </p> <a href=mailto:verstka@krown.cc class=contacts__mail>verstka@krown.cc</a> <br> <a href=tel:+74951182373 class=contacts__phone>+7 (495) 118 23 73</a> </address> </div> <slot></slot> </section>";
 
 /***/ }),
 /* 4 */
@@ -118,7 +118,7 @@ module.exports = "<form class=form-order action=/assets/forms/send-form.php :tit
 /* 8 */
 /***/ (function(module, exports) {
 
-module.exports = "<form class=form-question action=/assets/forms/send-form.php :title=\"'Остались вопросы? с адреса: ' + location\" data-form> <figure class=form-question__success> <div class=form-question__success-content-wrap> <p class=\"form-question__title form-question__title--success\">Спасибо за ваше обращение</p> <p class=\"form-question__subtitle form-question__subtitle--success\">Мы перезвоним вам в самое ближайшее время!</p> </div> </figure> <p class=form-question__title>Остались вопросы?</p> <p class=form-question__subtitle>Оставьте Ваш номер телефона и мы перезвоним с бесплатной консультацией:</p> <div class=form-question__input-wrap> <input type=text class=form-question__input placeholder=\"+7 (___) ___-__-__\" name=ff1 required data-form-phone-field> <button data-form-btn class=form-question__button></button> </div> <p data-form-status class=form-question__status>Статус отправки</p> <p class=form-question__description>Или звоните нам по номеру +7 (495) 989-98-57</p> </form>";
+module.exports = "<form class=form-question action=/assets/forms/send-form.php :title=\"'Остались вопросы? с адреса: ' + location\" data-form> <figure class=form-question__success> <div class=form-question__success-content-wrap> <p class=\"form-question__title form-question__title--success\">Спасибо за ваше обращение</p> <p class=\"form-question__subtitle form-question__subtitle--success\">Мы перезвоним вам в самое ближайшее время!</p> </div> </figure> <p class=form-question__title>Остались вопросы?</p> <p class=form-question__subtitle>Оставьте Ваш номер телефона и мы перезвоним с бесплатной консультацией:</p> <div class=form-question__input-wrap> <input type=text class=form-question__input placeholder=\"+7 (___) ___-__-__\" name=ff1 required data-form-phone-field> <button data-form-btn class=form-question__button></button> </div> <p data-form-status class=form-question__status>Статус отправки</p> <p class=form-question__description>Или звоните нам по номеру +7 (495) 118 23 73</p> </form>";
 
 /***/ }),
 /* 9 */
@@ -196,7 +196,7 @@ module.exports = "<figure class=quality__item> <div class=quality__item-content-
 /* 21 */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=site-footer id=site-footer> <div class=site-footer__content-wrap> <div class=site-footer__form-question-wrap> <form-question></form-question> </div> <div class=site-footer__faq-wrap> <faq></faq> </div> </div> <hr class=site-footer__hr> <div class=site-footer__content-wrap> <a href=mailto:hello.krown.cc class=site-footer__email>HELLO@KROWN.CC</a> <span class=site-footer__city>Севастополь, Фиолентовское шоссе д.1</span> <a href=tel:+74959899857 class=site-footer__phone>+7 (495) 989-98-57</a> </div> </footer>";
+module.exports = "<footer class=site-footer id=site-footer> <div class=site-footer__content-wrap> <div class=site-footer__form-question-wrap> <form-question></form-question> </div> <div class=site-footer__faq-wrap> <faq></faq> </div> </div> <hr class=site-footer__hr> <div class=site-footer__content-wrap> <a href=mailto:hello.krown.cc class=site-footer__email>HELLO@KROWN.CC</a> <span class=site-footer__city>Севастополь, Фиолентовское шоссе д.1</span> <a href=tel:+74951182373 class=site-footer__phone>+7 (495) 118 23 73</a> </div> </footer>";
 
 /***/ }),
 /* 22 */

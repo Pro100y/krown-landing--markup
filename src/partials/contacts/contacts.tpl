@@ -8,7 +8,7 @@
             </p>
             <a href="mailto:verstka@krown.cc" class="contacts__mail">verstka@krown.cc</a>
             <br>
-            <a href="tel:+74959899857" class="contacts__phone">+7 (495) 989-98-57</a>
+            <a href="tel:+74951182373" class="contacts__phone">+7 (495) 118 23 73</a>
         </address>
     </div>
 
