@@ -19,7 +19,7 @@
                 </div>
 
                 <a
-                    href = "/pages/6.order.html"
+                    href = "order.html"
                     class = "promo__order"
                 >заказать верстку</a>
                 <a

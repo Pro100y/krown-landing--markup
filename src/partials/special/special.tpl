@@ -11,7 +11,7 @@
 
             <p class="special__subtitle">Мы открыты для сотрудничества, и предлагаем агентствам и студиям выгодные условия по аутсорсингу. Условия работы обсуждаются индивидуально, по всем вопросам обращайтесь:</p>
             <a href="mailto:" class="special__mail">outsource@krown.cc</a>
-            <a href="tel:" class="special__phone">+7 (495) 989-98-57</a>
+            <a href="tel:+74951182373" class="special__phone">+7 (495) 118 23 73</a>
         </article>
 
         <aside class="special__sidebar">

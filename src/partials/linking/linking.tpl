@@ -17,16 +17,16 @@
                         <a href="" class="linking__modal-logo"></a>
                     </div>
                     <div class="linking__modal-header-col">
-                        <a href="tel:+74959899857" class="linking__modal__phone">+7 (495) 989-98-57</a>
+                        <a href="tel:+74951182373" class="linking__modal__phone">+7 (495) 118 23 73</a>
                     </div>
                 </header>
 
                 <p class="linking__modal-title">оказываем услуги:</p>
 
                 <div class="linking__modal-items-wrap">
-                    <a href="" class="linking__modal-item linking__modal-item--1">Разработка landing page</a>
-                    <a href="" class="linking__modal-item linking__modal-item--2">Верстка дизайн-макетов</a>
-                    <a href="" class="linking__modal-item linking__modal-item--3">
+                    <a href="http://landing.krown.cc" class="linking__modal-item linking__modal-item--1">Разработка landing page</a>
+                    <a href="http://verstka.krown.cc" class="linking__modal-item linking__modal-item--2">Верстка дизайн-макетов</a>
+                    <a href="http://support.krown.cc" class="linking__modal-item linking__modal-item--3">
                         Поддержка сайтов
                         <br>на 1С-Битрикс</a>
                 </div>

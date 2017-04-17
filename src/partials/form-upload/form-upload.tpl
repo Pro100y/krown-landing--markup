@@ -1,6 +1,7 @@
 <form
     action = "/assets/forms/send-form.php"
     class  = "form-upload"
+    enctype = "multipart/form-data"
     data-form
 >
 

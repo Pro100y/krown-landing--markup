@@ -469,7 +469,8 @@ Vue.component('map-widget', {
             ymaps.ready().done(function (ym) {
                 var map = new ym.Map('map-widget', {
                     center: [44.584508154698284, 33.48243169524696],
-                    zoom: 17
+                    zoom: 13,
+                    controls: ['zoomControl']
                 }, {
                     searchControlProvider: 'yandex#search'
                 });
@@ -915,6 +916,24 @@ var App = new Vue({
                     console.log($(this).css('objectFit'));
                 });
             };
+        },
+
+        /**
+         * Фиксация цели отслеживания
+         *
+         * @param {string} target       Отслеживаемый DOM элемент
+         * @param {string} event        Отслеживаемое событие
+         * @param {string} reachGoal    Имя цели в Яндекс.Метрике
+         */
+        yandexTarget: function yandexTarget(target, event, reachGoal) {
+
+            $(target).on(event, function () {
+                window.onload = function () {
+                    yaCounter44256449.reachGoal(reachGoal);
+                };
+                console.info('Отслеживаемый DOM элемент: ' + target + '\n', 'Отслеживаемое событие:     ' + event + '\n', 'Имя цели в Яндекс.Метрике: ' + reachGoal);
+                return true;
+            });
         }
     },
     mounted: function mounted() {
@@ -971,5 +990,11 @@ var App = new Vue({
         }
 
         vm.fixBrowsersBugs();
+
+        vm.yandexTarget('.promo__order', 'click', 'ORDER');
+        vm.yandexTarget('.form-upload__send', 'click', 'ORDER_SUBMIT');
+        vm.yandexTarget('.promo__readmore', 'click', 'PROJECTS');
+        vm.yandexTarget('.form-question__button', 'click', 'CALL_SUBMIT');
+        vm.yandexTarget('.navigation__menu-order', 'click', 'ORDER_TOP');
     }
 });

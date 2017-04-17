@@ -124,7 +124,7 @@ module.exports = "<form class=form-question action=/assets/forms/send-form.php :
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = "<form action=/assets/forms/send-form.php class=form-upload data-form> <ul class=form-upload__nav> <li class=form-upload__nav-item>МАКЕТЫ</li> <li class=form-upload__nav-item>ССЫЛКА</li> </ul> <section class=form-upload__tabs-wrap> <figure class=form-upload__tab> <file-upload @recalc-tab-heigth=heightFix();></file-upload> </figure> <figure class=form-upload__tab> <input type=text class=form-upload__link-field name=link placeholder=\"Укажите ссылку на скачаивание файлов проекта\"> </figure> </section> <div class=form-upload__fields-wrap> <label for=\"\" class=form-upload__label>ФИО:</label> <input type=text class=form-upload__input name=name placeholder=\"Ваше имя\"> <label for=\"\" class=form-upload__label>Электронная почта*:</label> <input type=text class=form-upload__input name=email placeholder=\"Ваш email\" required> <p class=form-upload__status data-form-status>Пожалуйста, укажите электронную почту</p> <label for=\"\" class=form-upload__label>Скайп:</label> <input type=text class=form-upload__input name=skype placeholder=\"Ваш скайп-логин\"> <label for=\"\" class=form-upload__label>Номер телефона*:</label> <input type=text class=form-upload__input name=phone placeholder=\"+7 (___) ___-__-__\" data-form-phone-field required> <p class=form-upload__status data-form-status>Пожалуйста, укажите номер телефона</p> <button class=form-upload__send data-form-btn>заказать верстку</button> </div> </form>";
+module.exports = "<form action=/assets/forms/send-form.php class=form-upload enctype=multipart/form-data data-form> <ul class=form-upload__nav> <li class=form-upload__nav-item>МАКЕТЫ</li> <li class=form-upload__nav-item>ССЫЛКА</li> </ul> <section class=form-upload__tabs-wrap> <figure class=form-upload__tab> <file-upload @recalc-tab-heigth=heightFix();></file-upload> </figure> <figure class=form-upload__tab> <input type=text class=form-upload__link-field name=link placeholder=\"Укажите ссылку на скачаивание файлов проекта\"> </figure> </section> <div class=form-upload__fields-wrap> <label for=\"\" class=form-upload__label>ФИО:</label> <input type=text class=form-upload__input name=name placeholder=\"Ваше имя\"> <label for=\"\" class=form-upload__label>Электронная почта*:</label> <input type=text class=form-upload__input name=email placeholder=\"Ваш email\" required> <p class=form-upload__status data-form-status>Пожалуйста, укажите электронную почту</p> <label for=\"\" class=form-upload__label>Скайп:</label> <input type=text class=form-upload__input name=skype placeholder=\"Ваш скайп-логин\"> <label for=\"\" class=form-upload__label>Номер телефона*:</label> <input type=text class=form-upload__input name=phone placeholder=\"+7 (___) ___-__-__\" data-form-phone-field required> <p class=form-upload__status data-form-status>Пожалуйста, укажите номер телефона</p> <button class=form-upload__send data-form-btn>заказать верстку</button> </div> </form>";
 
 /***/ }),
 /* 10 */
@@ -142,7 +142,7 @@ module.exports = "<transition name=lightbox--animation-> <section class=lightbox
 /* 12 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=linking> <button class=linking__button :class=\"{ 'linking__button--active' : showModal}\" @click=\"showModal=!showModal; changeScroll();\"></button> <transition name=linking--animation-> <figure class=linking__modal v-show=showModal> <div class=linking__modal-content-wrap> <header class=linking__modal-header> <div class=linking__modal-header-col></div> <div class=linking__modal-header-col> <a href=\"\" class=linking__modal-logo></a> </div> <div class=linking__modal-header-col> <a href=tel:+74959899857 class=linking__modal__phone>+7 (495) 989-98-57</a> </div> </header> <p class=linking__modal-title>оказываем услуги:</p> <div class=linking__modal-items-wrap> <a href=\"\" class=\"linking__modal-item linking__modal-item--1\">Разработка landing page</a> <a href=\"\" class=\"linking__modal-item linking__modal-item--2\">Верстка дизайн-макетов</a> <a href=\"\" class=\"linking__modal-item linking__modal-item--3\"> Поддержка сайтов <br>на 1С-Битрикс</a> </div> <footer class=linking__modal-footer>Севастополь [[ year ]]</footer> </div> </figure> </transition> </section>";
+module.exports = "<section class=linking> <button class=linking__button :class=\"{ 'linking__button--active' : showModal}\" @click=\"showModal=!showModal; changeScroll();\"></button> <transition name=linking--animation-> <figure class=linking__modal v-show=showModal> <div class=linking__modal-content-wrap> <header class=linking__modal-header> <div class=linking__modal-header-col></div> <div class=linking__modal-header-col> <a href=\"\" class=linking__modal-logo></a> </div> <div class=linking__modal-header-col> <a href=tel:+74951182373 class=linking__modal__phone>+7 (495) 118 23 73</a> </div> </header> <p class=linking__modal-title>оказываем услуги:</p> <div class=linking__modal-items-wrap> <a href=http://landing.krown.cc class=\"linking__modal-item linking__modal-item--1\">Разработка landing page</a> <a href=http://verstka.krown.cc class=\"linking__modal-item linking__modal-item--2\">Верстка дизайн-макетов</a> <a href=http://support.krown.cc class=\"linking__modal-item linking__modal-item--3\"> Поддержка сайтов <br>на 1С-Битрикс</a> </div> <footer class=linking__modal-footer>Севастополь [[ year ]]</footer> </div> </figure> </transition> </section>";
 
 /***/ }),
 /* 13 */
@@ -154,7 +154,7 @@ module.exports = "<div class=map-widget id=map-widget> <slot></slot> </div>";
 /* 14 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=navigation> <div class=navigation__content-wrap> <a href=/ class=navigation__logo></a> <nav class=navigation__menu> <a href=/pages/2.about-us.html class=navigation__menu-item :class=\"{'navigation__menu-item--active': currentPage == 'about-us'}\">О нас</a> <a href=/pages/3.outsource.html class=navigation__menu-item :class=\"{'navigation__menu-item--active': currentPage == 'outsource'}\">аутсорсинг</a> <a href=/pages/4.projects.html class=navigation__menu-item :class=\"{'navigation__menu-item--active': currentPage == 'projects'}\">портфолио</a> <a href=/pages/5.contacts.html class=navigation__menu-item :class=\"{'navigation__menu-item--active': currentPage == 'contacts'}\">контакты</a> <a href=/pages/6.order.html class=navigation__menu-order>заказать верстку</a> </nav> </div> </section>";
+module.exports = "<section class=navigation> <div class=navigation__content-wrap> <a href=/ class=navigation__logo></a> <nav class=navigation__menu> <a href=about-us.html class=navigation__menu-item :class=\"{'navigation__menu-item--active': currentPage == 'about-us'}\">О нас</a> <a href=outsource.html class=navigation__menu-item :class=\"{'navigation__menu-item--active': currentPage == 'outsource'}\">аутсорсинг</a> <a href=projects.html class=navigation__menu-item :class=\"{'navigation__menu-item--active': currentPage == 'projects'}\">портфолио</a> <a href=contacts.html class=navigation__menu-item :class=\"{'navigation__menu-item--active': currentPage == 'contacts'}\">контакты</a> <a href=order.html class=navigation__menu-order>заказать верстку</a> </nav> </div> </section>";
 
 /***/ }),
 /* 15 */
@@ -178,7 +178,7 @@ module.exports = "<figure class=projects__gallery-item data-transition-off> <div
 /* 18 */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=promo> <div class=promo__content-wrap> <div class=promo__container> <div class=promo__content> <h1 class=promo__title>Качественная и&nbsp;быстрая верстка ваших дизайн-макетов</h1> <p class=promo__subtitle>Превратим ваши psd/sketch макеты в структурированный набор html/css файлов. Сохраним pixel-perfect, прикрутим анимацию.</p> <div class=promo__items-wrap> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--1\"></div> <figcaption class=promo__item-caption>sketch</figcaption> </figure> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--2\"></div> <figcaption class=promo__item-caption>photoshop</figcaption> </figure> </div> <a href=/pages/6.order.html class=promo__order>заказать верстку</a> <a href=#site-footer class=\"promo__order promo__order--mobile\">заказать верстку</a> <a href=#quality class=promo__readmore>смотреть примеры работ</a> </div> <div class=promo__image-wrap> <img src=/assets/images/promo-2.jpg alt=\"\" class=\"promo__image promo__image--1 wow promoImage\"> <img src=/assets/images/promo-3.jpg alt=\"\" class=\"promo__image promo__image--2 wow promoImage\"> </div> </div> </div> </header>";
+module.exports = "<header class=promo> <div class=promo__content-wrap> <div class=promo__container> <div class=promo__content> <h1 class=promo__title>Качественная и&nbsp;быстрая верстка ваших дизайн-макетов</h1> <p class=promo__subtitle>Превратим ваши psd/sketch макеты в структурированный набор html/css файлов. Сохраним pixel-perfect, прикрутим анимацию.</p> <div class=promo__items-wrap> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--1\"></div> <figcaption class=promo__item-caption>sketch</figcaption> </figure> <figure class=promo__item> <div class=\"promo__item-icon promo__item-icon--2\"></div> <figcaption class=promo__item-caption>photoshop</figcaption> </figure> </div> <a href=order.html class=promo__order>заказать верстку</a> <a href=#site-footer class=\"promo__order promo__order--mobile\">заказать верстку</a> <a href=#quality class=promo__readmore>смотреть примеры работ</a> </div> <div class=promo__image-wrap> <img src=/assets/images/promo-2.jpg alt=\"\" class=\"promo__image promo__image--1 wow promoImage\"> <img src=/assets/images/promo-3.jpg alt=\"\" class=\"promo__image promo__image--2 wow promoImage\"> </div> </div> </div> </header>";
 
 /***/ }),
 /* 19 */
@@ -202,7 +202,7 @@ module.exports = "<footer class=site-footer id=site-footer> <div class=site-foot
 /* 22 */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=special> <div class=special__content-wrap> <article class=special__content> <header class=special__title>Специальное предложение для студий и агентств</header> <aside class=\"special__sidebar special__sidebar--mobile\"> <p class=special__sidebar-title>почасовая тарификация</p> <p class=special__cost data-from=от data-to=\"за час\">800 р.</p> </aside> <p class=special__subtitle>Мы открыты для сотрудничества, и предлагаем агентствам и студиям выгодные условия по аутсорсингу. Условия работы обсуждаются индивидуально, по всем вопросам обращайтесь:</p> <a href=mailto: class=special__mail>outsource@krown.cc</a> <a href=tel: class=special__phone>+7 (495) 989-98-57</a> </article> <aside class=special__sidebar> <p class=special__sidebar-title>почасовая тарификация</p> <p class=special__cost data-from=от data-to=\"за час\">800 р.</p> </aside> </div> </section>";
+module.exports = "<section class=special> <div class=special__content-wrap> <article class=special__content> <header class=special__title>Специальное предложение для студий и агентств</header> <aside class=\"special__sidebar special__sidebar--mobile\"> <p class=special__sidebar-title>почасовая тарификация</p> <p class=special__cost data-from=от data-to=\"за час\">800 р.</p> </aside> <p class=special__subtitle>Мы открыты для сотрудничества, и предлагаем агентствам и студиям выгодные условия по аутсорсингу. Условия работы обсуждаются индивидуально, по всем вопросам обращайтесь:</p> <a href=mailto: class=special__mail>outsource@krown.cc</a> <a href=tel:+74951182373 class=special__phone>+7 (495) 118 23 73</a> </article> <aside class=special__sidebar> <p class=special__sidebar-title>почасовая тарификация</p> <p class=special__cost data-from=от data-to=\"за час\">800 р.</p> </aside> </div> </section>";
 
 /***/ }),
 /* 23 */
@@ -685,7 +685,8 @@ Vue.component('map-widget', {
             ymaps.ready().done(function (ym) {
                 var map = new ym.Map('map-widget', {
                     center: [44.584508154698284, 33.48243169524696],
-                    zoom: 17
+                    zoom: 13,
+                    controls: ['zoomControl']
                 }, {
                     searchControlProvider: 'yandex#search'
                 });
@@ -1131,6 +1132,24 @@ var App = new Vue({
                     console.log($(this).css('objectFit'));
                 });
             };
+        },
+
+        /**
+         * Фиксация цели отслеживания
+         *
+         * @param {string} target       Отслеживаемый DOM элемент
+         * @param {string} event        Отслеживаемое событие
+         * @param {string} reachGoal    Имя цели в Яндекс.Метрике
+         */
+        yandexTarget: function yandexTarget(target, event, reachGoal) {
+
+            $(target).on(event, function () {
+                window.onload = function () {
+                    yaCounter44256449.reachGoal(reachGoal);
+                };
+                console.info('Отслеживаемый DOM элемент: ' + target + '\n', 'Отслеживаемое событие:     ' + event + '\n', 'Имя цели в Яндекс.Метрике: ' + reachGoal);
+                return true;
+            });
         }
     },
     mounted: function mounted() {
@@ -1187,6 +1206,12 @@ var App = new Vue({
         }
 
         vm.fixBrowsersBugs();
+
+        vm.yandexTarget('.promo__order', 'click', 'ORDER');
+        vm.yandexTarget('.form-upload__send', 'click', 'ORDER_SUBMIT');
+        vm.yandexTarget('.promo__readmore', 'click', 'PROJECTS');
+        vm.yandexTarget('.form-question__button', 'click', 'CALL_SUBMIT');
+        vm.yandexTarget('.navigation__menu-order', 'click', 'ORDER_TOP');
     }
 });
 
