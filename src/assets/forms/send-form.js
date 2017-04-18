@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var $f = $(this).parents('[data-form]');
         var $s = $f.find('[data-form-status]');
         var data = {};
+        var formData = new FormData($f[0]);
 
         var action = $f.attr('action') || '/assets/forms/send-form.php';
         var senderUrl = location.href;
@@ -71,13 +72,22 @@ document.addEventListener('DOMContentLoaded', function () {
         $.ajax({
             url: action,
             type: 'POST',
-            data: {
-                send: 'do',
-                to: mailAddr,
-                subj: $f.attr('title'),
-                data: data,
-                senderUrl: senderUrl
-            },
+            
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: formData,
+//             data: {
+//                 send: 'do',
+//                 to: mailAddr,
+//                 subj: $f.attr('title'),
+//                 data: data,
+//                 senderUrl: senderUrl
+//             },
+            
+            
+            
+            
             beforeSend: function () {
                 $b.text('Отправка...');
             },
